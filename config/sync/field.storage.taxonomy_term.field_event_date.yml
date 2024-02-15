@@ -1,0 +1,19 @@
+uuid: a1058e86-3a60-40e6-84ae-d105781f3d05
+langcode: en
+status: true
+dependencies:
+  module:
+    - smart_date
+    - taxonomy
+id: taxonomy_term.field_event_date
+field_name: field_event_date
+entity_type: taxonomy_term
+type: smartdate
+settings: {  }
+module: smart_date
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

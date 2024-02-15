@@ -1,0 +1,8 @@
+uuid: 654d1818-1254-4c82-b74f-8a5cd2022c94
+langcode: en
+status: true
+dependencies: {  }
+name: Restaurant
+vid: restaurant
+description: 'Black Label'
+weight: 0

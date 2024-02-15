@@ -1,0 +1,73 @@
+uuid: 658ddaca-b8a5-4f0b-9efe-155b69f51571
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.restaurant.field_date
+    - field.field.taxonomy_term.restaurant.field_event_date
+    - taxonomy.vocabulary.restaurant
+  module:
+    - datetime
+    - path
+    - smart_date
+    - text
+id: taxonomy_term.restaurant.default
+targetEntityType: taxonomy_term
+bundle: restaurant
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_event_date:
+    type: smartdate_inline
+    weight: 3
+    region: content
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: true
+      allday: true
+      remove_seconds: false
+      separator: to
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

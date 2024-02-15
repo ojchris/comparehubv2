@@ -1,0 +1,33 @@
+uuid: bd888844-8d70-4c15-8a47-a2fb6ec6bb24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_event_date
+    - taxonomy.vocabulary.restaurant
+  module:
+    - smart_date
+    - smart_date_recur
+third_party_settings:
+  smart_date_recur:
+    allow_recurring: true
+    month_limit: 12
+id: taxonomy_term.restaurant.field_event_date
+field_name: field_event_date
+entity_type: taxonomy_term
+bundle: restaurant
+label: 'Event Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_duration: 60
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: ''
+    default_date: ''
+    min: ''
+    max: ''
+default_value_callback: ''
+settings: {  }
+field_type: smartdate
