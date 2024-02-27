@@ -1,0 +1,18 @@
+uuid: 4778bc69-b5cd-48d8-afb9-d56a7e57f245
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bxAjXM_xls--jwh5HZqTat__y2_4nQJCFFLD69Wvr8A
+id: request_dispatcher_httpcaching_default_7_0_0
+label: 'HTTP Cache'
+minimum_solr_version: 7.0.0
+environments: {  }
+recommended: false
+request_dispatcher:
+  name: httpCaching
+  lastModFrom: openTime
+  etagSeed: Solr
+  cacheControl:
+    -
+      VALUE: 'max-age=30, public'
