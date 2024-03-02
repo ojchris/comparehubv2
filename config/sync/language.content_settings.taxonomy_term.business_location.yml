@@ -1,0 +1,11 @@
+uuid: d8d65bc0-6d3a-4985-ad99-7a8cb9df5e29
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.business_location
+id: taxonomy_term.business_location
+target_entity_type_id: taxonomy_term
+target_bundle: business_location
+default_langcode: site_default
+language_alterable: false
