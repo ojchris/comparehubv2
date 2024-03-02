@@ -1,0 +1,20 @@
+uuid: 0f7087f5-e6e5-4f7e-a430-38cdd6959b7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_business_type
+field_name: field_business_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
