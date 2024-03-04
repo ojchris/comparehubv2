@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.business.field_address
+    - field.field.node.business.field_business_name
     - field.field.node.business.field_business_type
     - field.field.node.business.field_location
     - field.field.node.business.field_logo
-    - field.field.node.business.field_name
     - node.type.business
   module:
     - image
@@ -23,6 +23,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_business_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
     region: content
   field_business_type:
     type: entity_reference_label
@@ -50,14 +58,6 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 104
-    region: content
-  field_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 101
     region: content
   links:
     settings: {  }

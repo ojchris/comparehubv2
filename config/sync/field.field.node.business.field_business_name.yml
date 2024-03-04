@@ -1,15 +1,15 @@
-uuid: 88fd4f74-1c37-4d6e-9b75-a0f9b9a8cdd0
+uuid: d5603552-2fe2-4303-b433-be8d0f1923c6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_name
+    - field.storage.node.field_business_name
     - node.type.business
-id: node.business.field_name
-field_name: field_name
+id: node.business.field_business_name
+field_name: field_business_name
 entity_type: node
 bundle: business
-label: Name
+label: 'Business Name'
 description: ''
 required: true
 translatable: false
