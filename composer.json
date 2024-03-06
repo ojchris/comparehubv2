@@ -24,6 +24,7 @@
         "drupal/core-recommended": "^10.2",
         "drupal/eva": "^3.0",
         "drupal/facets": "^3.0@beta",
+        "drupal/feeds": "^3.0@beta",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/search_api": "^1.31",
         "drupal/search_api_solr": "^4.3",
