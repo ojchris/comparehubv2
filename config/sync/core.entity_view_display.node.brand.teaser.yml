@@ -1,0 +1,36 @@
+uuid: 2d23ba56-6013-4f2f-bde1-ea8898fbf44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.brand.field_address
+    - field.field.node.brand.field_brand_name
+    - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_location
+    - field.field.node.brand.field_logo
+    - field.field.node.brand.field_phone_number
+    - field.field.node.brand.field_website
+    - node.type.brand
+  module:
+    - user
+id: node.brand.teaser
+targetEntityType: node
+bundle: brand
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_brand_name: true
+  field_brand_type: true
+  field_location: true
+  field_logo: true
+  field_phone_number: true
+  field_website: true
+  langcode: true
+  search_api_excerpt: true

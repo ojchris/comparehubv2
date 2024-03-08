@@ -1,0 +1,19 @@
+uuid: 15c37bb1-c800-40ef-9a47-b981e1a60ea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_number
+    - node.type.brand
+id: node.brand.field_phone_number
+field_name: field_phone_number
+entity_type: node
+bundle: brand
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

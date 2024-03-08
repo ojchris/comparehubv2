@@ -1,48 +1,51 @@
-uuid: 47daebd6-d9cc-4b25-b921-195ebba15a4c
+uuid: ed0604ed-fc08-4af2-a9bc-d78624662975
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.business.field_address
-    - field.field.node.business.field_business_name
-    - field.field.node.business.field_business_type
-    - field.field.node.business.field_location
-    - field.field.node.business.field_logo
+    - field.field.node.brand.field_address
+    - field.field.node.brand.field_brand_name
+    - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_location
+    - field.field.node.brand.field_logo
+    - field.field.node.brand.field_phone_number
+    - field.field.node.brand.field_website
     - image.style.thumbnail
-    - node.type.business
+    - node.type.brand
   module:
     - image
+    - link
     - path
-id: node.business.default
+id: node.brand.default
 targetEntityType: node
-bundle: business
+bundle: brand
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address:
     type: string_textarea
-    weight: 3
+    weight: 11
     region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_business_name:
+  field_brand_name:
     type: string_textfield
-    weight: 1
+    weight: 8
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_business_type:
+  field_brand_type:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -52,7 +55,7 @@ content:
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
@@ -62,42 +65,58 @@ content:
     third_party_settings: {  }
   field_logo:
     type: image_image
-    weight: 2
+    weight: 10
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_phone_number:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_website:
+    type: link_default
+    weight: 14
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 6
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 9
+    weight: 4
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 12
+    weight: 7
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 10
+    weight: 5
     region: content
     settings:
       display_label: true
@@ -112,7 +131,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS

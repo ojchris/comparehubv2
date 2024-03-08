@@ -1,19 +1,19 @@
-uuid: e9ab6009-b5e3-4233-9369-c8e44b10fadf
+uuid: 1517dfd4-3960-4459-8a47-798595915d15
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_logo
-    - node.type.business
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_image
   module:
     - image
-id: node.business.field_logo
-field_name: field_logo
-entity_type: node
-bundle: business
-label: Logo
+id: commerce_product.default.field_image
+field_name: field_image
+entity_type: commerce_product
+bundle: default
+label: Image
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -22,12 +22,12 @@ settings:
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg webp'
-  max_filesize: ''
+  max_filesize: '2 MB'
   max_resolution: ''
   min_resolution: ''
   alt_field: true
   alt_field_required: true
-  title_field: true
+  title_field: false
   title_field_required: false
   default_image:
     uuid: ''

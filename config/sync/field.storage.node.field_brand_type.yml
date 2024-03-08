@@ -1,17 +1,16 @@
-uuid: 51640a43-676a-4f9e-8a66-489f0842d1c2
+uuid: e730d3eb-f2ae-4358-ad1f-6503899172c7
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_business_name
-field_name: field_business_name
+    - taxonomy
+id: node.field_brand_type
+field_name: field_brand_type
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

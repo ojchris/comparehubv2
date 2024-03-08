@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.summary
+    - field.field.commerce_product_variation.default.attribute_additional_details
   module:
     - commerce_price
   enforced:
@@ -43,6 +44,7 @@ content:
     weight: -5
     region: content
 hidden:
+  attribute_additional_details: true
   langcode: true
   price: true
   search_api_excerpt: true

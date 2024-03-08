@@ -1,11 +1,11 @@
-uuid: 303668c2-99ce-43bb-a264-31dfb3d0ae5b
+uuid: 2f7ae444-73f0-4094-b28c-8017b6f79306
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.business
-id: node.business
+    - node.type.brand
+id: node.brand
 target_entity_type_id: node
-target_bundle: business
+target_bundle: brand
 default_langcode: site_default
 language_alterable: false

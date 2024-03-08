@@ -1,16 +1,16 @@
-uuid: e6703bc0-caf6-4e7e-850b-0648512d65a0
+uuid: e0f9fbc9-a5cd-4ac3-92ad-4e3212c14a9d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_business_type
-    - node.type.business
-    - taxonomy.vocabulary.business_type
-id: node.business.field_business_type
-field_name: field_business_type
+    - field.storage.node.field_location
+    - node.type.brand
+    - taxonomy.vocabulary.business_location
+id: node.brand.field_location
+field_name: field_location
 entity_type: node
-bundle: business
-label: 'Business Type'
+bundle: brand
+label: Location
 description: ''
 required: true
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      business_type: business_type
+      business_location: business_location
     sort:
       field: name
       direction: asc

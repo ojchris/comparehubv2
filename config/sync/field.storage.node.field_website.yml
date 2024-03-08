@@ -1,16 +1,16 @@
-uuid: 281c1281-f560-4f61-b1b2-a757c4e7b407
+uuid: 21f30a6e-38ce-4bfd-8525-a84a7ca2337c
 langcode: en
 status: true
 dependencies:
   module:
+    - link
     - node
-id: node.field_address
-field_name: field_address
+id: node.field_website
+field_name: field_website
 entity_type: node
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

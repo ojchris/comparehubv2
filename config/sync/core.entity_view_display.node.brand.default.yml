@@ -1,20 +1,23 @@
-uuid: 6c7b4a2a-5e9f-40a2-91e4-af38d0897b00
+uuid: aca83fba-4703-487c-a130-533b6bfbd61b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.business.field_address
-    - field.field.node.business.field_business_name
-    - field.field.node.business.field_business_type
-    - field.field.node.business.field_location
-    - field.field.node.business.field_logo
-    - node.type.business
+    - field.field.node.brand.field_address
+    - field.field.node.brand.field_brand_name
+    - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_location
+    - field.field.node.brand.field_logo
+    - field.field.node.brand.field_phone_number
+    - field.field.node.brand.field_website
+    - node.type.brand
   module:
     - image
+    - link
     - user
-id: node.business.default
+id: node.brand.default
 targetEntityType: node
-bundle: business
+bundle: brand
 mode: default
 content:
   field_address:
@@ -22,23 +25,23 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
-  field_business_name:
+  field_brand_name:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 106
+    weight: 0
     region: content
-  field_business_type:
+  field_brand_type:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 105
+    weight: 4
     region: content
   field_location:
     type: entity_reference_label
@@ -46,7 +49,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_logo:
     type: image
@@ -57,13 +60,29 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
-  links:
-    settings: {  }
+  field_phone_number:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 100
+    weight: 6
+    region: content
+  field_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
 hidden:
   langcode: true
+  links: true
   search_api_excerpt: true

@@ -1,16 +1,14 @@
-uuid: dc558b9a-b2cb-4c0a-bfbd-cfef148e8d87
+uuid: b95f0cf6-5821-442a-9cc7-e311445d2f53
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
     - text
-_core:
-  default_config_hash: nhYtx4dRhENXHM78QmiysOM5d1H8OLi_837Ukf5Mpb8
-id: commerce_product.body
-field_name: body
+id: commerce_product.field_description
+field_name: field_description
 entity_type: commerce_product
-type: text_with_summary
+type: text_long
 settings: {  }
 module: text
 locked: false

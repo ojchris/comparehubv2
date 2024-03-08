@@ -1,4 +1,4 @@
-uuid: f7e27fdf-efad-42ac-913a-e63a27fefa28
+uuid: f6309781-84ac-4bcf-b4b3-40153cc16a41
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Business
-type: business
-description: 'Business details'
+name: Brand
+type: brand
+description: 'Brand details'
 help: ''
 new_revision: true
 preview_mode: 1

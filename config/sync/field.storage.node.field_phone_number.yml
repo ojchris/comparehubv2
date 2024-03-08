@@ -1,15 +1,17 @@
-uuid: 281c1281-f560-4f61-b1b2-a757c4e7b407
+uuid: 146cfc78-c95e-4248-a840-d1871a271f7b
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_address
-field_name: field_address
+id: node.field_phone_number
+field_name: field_phone_number
 entity_type: node
-type: string_long
+type: string
 settings:
+  max_length: 11
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

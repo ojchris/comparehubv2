@@ -1,14 +1,14 @@
-uuid: ca3fa324-99a0-45f1-9ddc-fbd67b6df1db
+uuid: 9fa554d5-6224-4f67-8072-ad173ec6793c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_address
-    - node.type.business
-id: node.business.field_address
+    - node.type.brand
+id: node.brand.field_address
 field_name: field_address
 entity_type: node
-bundle: business
+bundle: brand
 label: Address
 description: ''
 required: true

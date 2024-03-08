@@ -1,14 +1,14 @@
-uuid: 8d55e9cc-8910-4c1b-b912-f551880a2b75
+uuid: 27c8b962-a904-4917-a218-9bbf2f0c03db
 langcode: en
 status: true
 dependencies:
   module:
+    - commerce_product
     - file
     - image
-    - node
-id: node.field_logo
-field_name: field_logo
-entity_type: node
+id: commerce_product.field_image
+field_name: field_image
+entity_type: commerce_product
 type: image
 settings:
   target_type: file
