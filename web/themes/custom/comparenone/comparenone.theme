@@ -1,9 +1,19 @@
-<?php declare(strict_types = 1);
+<?php 
+declare(strict_types = 1);
 
 /**
  * @file
  * Functions to support theming in the comparenone theme.
  */
+
+ /**
+ * Implements hook_form_alter() for add-to-cart form.
+ */
+function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_state->getBuildInfo()['callback_object'] instanceof \Drupal\commerce_cart\Form\AddToCartFormInterface) {
+  $form[ 'actions' ][ 'submit' ][ '#value' ] = t( 'Add to Compare' );  
+  }
+}
 
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
@@ -25,3 +35,4 @@ function comparenone_preprocess_page(array &$variables): void {
 function comparenone_preprocess_node(array &$variables): void {
 
 }
+
