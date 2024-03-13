@@ -7,9 +7,11 @@ declare(strict_types = 1);
  */
 
  /**
- * Implements hook_form_alter() for add-to-cart form.
+ * Implements hook_form_alter().
  */
 function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  
+  // Change add-to-cart button text to Add to compare
   if ($form_state->getBuildInfo()['callback_object'] instanceof \Drupal\commerce_cart\Form\AddToCartFormInterface) {
   $form[ 'actions' ][ 'submit' ][ '#value' ] = t( 'Add to Compare' );  
   }
