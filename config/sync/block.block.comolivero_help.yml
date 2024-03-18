@@ -1,0 +1,22 @@
+uuid: 2f2a860b-8ebb-42b6-a6cc-a55bcf20a77b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - comolivero
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: comolivero_help
+theme: comolivero
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

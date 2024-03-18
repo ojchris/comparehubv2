@@ -1,0 +1,22 @@
+uuid: 557b79e7-ec4f-4d92-943a-c07146c5d3df
+langcode: en
+status: true
+dependencies:
+  theme:
+    - comolivero
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: comolivero_primary_local_tasks
+theme: comolivero
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

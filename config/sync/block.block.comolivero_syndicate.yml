@@ -1,0 +1,23 @@
+uuid: d8900004-9ce3-4595-9143-9b8a868b6b28
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - comolivero
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: comolivero_syndicate
+theme: comolivero
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

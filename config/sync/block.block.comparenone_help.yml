@@ -1,0 +1,22 @@
+uuid: 56f0f01e-7ee0-4bd0-8b2c-a0e3ec789ff0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - comparenone
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: comparenone_help
+theme: comparenone
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

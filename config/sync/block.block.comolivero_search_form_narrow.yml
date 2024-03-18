@@ -1,0 +1,23 @@
+uuid: 6312b83d-5634-4b6d-a2e6-3d7175a9d769
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - comolivero
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: comolivero_search_form_narrow
+theme: comolivero
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

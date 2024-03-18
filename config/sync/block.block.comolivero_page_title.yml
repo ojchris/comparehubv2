@@ -1,0 +1,20 @@
+uuid: ba80b6fc-4dc4-481b-9095-9af5ed5595ab
+langcode: en
+status: true
+dependencies:
+  theme:
+    - comolivero
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: comolivero_page_title
+theme: comolivero
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

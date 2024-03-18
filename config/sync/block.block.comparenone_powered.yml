@@ -1,0 +1,22 @@
+uuid: 8a165a4f-c7c7-489d-ae3d-358b1f12a951
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - comparenone
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: comparenone_powered
+theme: comparenone
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

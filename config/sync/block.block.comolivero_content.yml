@@ -1,0 +1,22 @@
+uuid: acb7eabf-70bc-4d91-bfe5-f39de64b1819
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - comolivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: comolivero_content
+theme: comolivero
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
