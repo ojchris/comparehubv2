@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: CF063FOHh618k2RSCYAlKtMaGXqkruR5KCoYWVVpNw4
+reviews:
+  enabled: 1
+  sort_order: oldest
+  multiple: '0'
+  notify_admin: null
+  review_types:
+    brand: brand
+    article: 0
+    page: 0
+  moderate_types:
+    article: 0
+    brand: 0
+    page: 0
