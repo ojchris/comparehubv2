@@ -1,0 +1,10 @@
+uuid: 00a88048-977e-47b3-b332-f59123f77f9a
+langcode: en
+status: true
+dependencies: {  }
+id: brand_event
+label: 'Brand Event'
+icon_uuid: null
+icon_default: null
+description: 'To hold event information of brands within the Brand nodes'
+behavior_plugins: {  }

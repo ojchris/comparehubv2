@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.brand.field_address
     - field.field.node.brand.field_brand_name
     - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
     - field.field.node.brand.field_phone_number
@@ -15,6 +16,7 @@ dependencies:
   module:
     - image
     - link
+    - paragraphs
     - path
 id: node.brand.default
 targetEntityType: node
@@ -52,6 +54,24 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_events:
+    type: paragraphs
+    weight: 26
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete

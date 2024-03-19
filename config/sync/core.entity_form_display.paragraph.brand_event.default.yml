@@ -1,0 +1,53 @@
+uuid: 84ad0c78-f91a-447a-95fd-063badd9f0fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.brand_event.field_date_one_off_events
+    - field.field.paragraph.brand_event.field_details
+    - field.field.paragraph.brand_event.field_schedule_recurring_events
+    - paragraphs.paragraphs_type.brand_event
+  module:
+    - datetime
+    - smart_date
+id: paragraph.brand_event.default
+targetEntityType: paragraph
+bundle: brand_event
+mode: default
+content:
+  field_date_one_off_events:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_details:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_schedule_recurring_events:
+    type: smartdate_inline
+    weight: 1
+    region: content
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: true
+      allday: true
+      remove_seconds: false
+      separator: to
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

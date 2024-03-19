@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.brand.field_address
     - field.field.node.brand.field_brand_name
     - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
     - field.field.node.brand.field_phone_number
     - field.field.node.brand.field_website
     - node.type.brand
   module:
+    - entity_reference_revisions
     - image
     - link
     - user
@@ -42,6 +44,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_events:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_location:
     type: entity_reference_label
