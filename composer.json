@@ -29,6 +29,7 @@
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/paragraphs": "^1.17",
         "drupal/reviews": "^2.0@beta",
+        "drupal/save_edit": "^1.7",
         "drupal/search_api": "^1.31",
         "drupal/search_api_solr": "^4.3",
         "drupal/smart_date": "^4.0",
