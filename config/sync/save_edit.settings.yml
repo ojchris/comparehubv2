@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: MfCIGqpPS5Ihe_IOWhqbB1hDemb6VF_186BxkS8Giwg
+button_value: 'Save & Continue'
+button_weight: '-1'
+unpublish: true
+unpublish_new_only: true
+hide_default_save: true
+hide_default_publish: false
+hide_default_preview: true
+hide_default_delete: true
+node_types:
+  brand: brand
+  article: '0'
+  page: '0'

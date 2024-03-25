@@ -52,6 +52,7 @@ module:
   path_alias: 0
   profile: 0
   reviews: 0
+  save_edit: 0
   search: 0
   search_api: 0
   shortcut: 0
