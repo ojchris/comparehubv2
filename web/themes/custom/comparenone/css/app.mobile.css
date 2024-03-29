@@ -1,0 +1,46 @@
+
+.no-display {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-menu-close {
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-header.menu-opened {
+    height: 100%;
+    align-items: flex-start;
+    background-color: white;
+  }
+  
+  .page-header.menu-opened .brand-image {
+    display: none;
+  }
+  
+  .page-header.menu-opened .nav-menu {
+    display: block;
+  }
+
+  .page-header.menu-opened .menu-items {
+    flex-direction: column;
+  }
+
+  .page-header.menu-opened .header-cta {
+    display: flex;
+  }
+
+  .page-header.menu-opened  .nav-items {
+  flex-direction: column;
+  gap: 66px;
+  padding-top: 73px;
+  padding-left: 28px;
+}
+  
+}
