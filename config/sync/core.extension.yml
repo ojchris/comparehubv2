@@ -59,6 +59,7 @@ module:
   smart_date: 0
   smart_date_recur: 0
   state_machine: 0
+  stringoverrides: 0
   system: 0
   taxonomy: 0
   text: 0

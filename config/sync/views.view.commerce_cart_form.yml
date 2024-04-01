@@ -29,6 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: 'Compare List'
       fields:
         purchased_entity:
           id: purchased_entity
