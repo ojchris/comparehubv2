@@ -207,23 +207,38 @@
         </div>
       </section>
 
-      {{node.field_three_column_with_headline.value|raw}}
+      <section class="page-section section-after-secondary-mast">
+        <section class="terms-section">
+        <div class="section-heading-tab">
+          <div class="context-tab-selectors">
+            <div class="context-tab-selector active-tab-selector" data-content-section="termscontent">
+              Terms of use
+            </div>
+            <div class="context-tab-selector" data-content-section="policycontent">
+              Privacy Policy
+            </div>
+          </div>
+        </div>
+        <section class="terms-policy-main-content" style="display:block" id="termscontent">
 
-      {{node.field_who_we_are.value|raw}}
+        <div class="section-content terms-section-content">
+        {{node.field_privacy_policy.value|raw}}
+        </div>
 
-      {{node.field_about_us_partners.value|raw}}
+        <div class="section-content terms-section-content"></div>
+      </section>
+      <section class="terms-policy-main-content" style="display:none" id="policycontent">
 
-      {{node.field_partners_sectors.value|raw}}
+      <div class="section-content terms-section-content">
+        {{node.field_terms_and_condition.value|raw}}
+        </div>
 
-      {{node.field_partners_two_column.value|raw}}
+    <div class="section-content terms-section-content"></div>
+ 
+      </section>
 
-      {{node.field_about_us_our_team.value|raw}}
-
-       {{node.field_about_us_our_team.value|raw}}
-
-        {{node.field_about_us_our_team.value|raw}}
-
-      {{node.field_get_in_touch.value|raw}}
+      </section>
+      </section>
 
             <section class="page-columned-section subscription-cta-section">
               <div class="section-column-one">
@@ -422,3 +437,4 @@
     </footer>
   {% endif %}
 </div>{# /.layout-container #}
+{{ attach_library('comparenone/terms') }}
