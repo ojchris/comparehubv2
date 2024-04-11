@@ -50,7 +50,13 @@ function comparenone_preprocess_html(array &$variables): void {
  * Implements hook_preprocess_HOOK() for page.html.twig.
  */
 function comparenone_preprocess_page(array &$variables): void {
-
+    // Make 'title' variable available across all pages & nodes
+    if(isset($variables['node'])) {
+        $variables['title'] = $variables['node']->title->value;
+    }
+    else{
+        $variables['title'] = $variables['page']['#title'];
+    }
 }
 
 /**
