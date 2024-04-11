@@ -23,7 +23,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 2
     region: content
   field_image:
     type: image
@@ -34,7 +34,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_product_brand:
     type: entity_reference_label
@@ -42,7 +42,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: content
   title:
     type: string
@@ -50,17 +50,15 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
+    weight: 0
     region: content
   variations:
     type: commerce_add_to_cart
     label: hidden
     settings:
-      show_quantity: false
-      default_quantity: '1'
       combine: true
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
 hidden:
   created: true

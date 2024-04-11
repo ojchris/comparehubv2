@@ -1,20 +1,15 @@
-uuid: 396769cd-a8d1-4dc6-8c17-5fb8491800c3
+uuid: 7d0d6898-59ac-4e66-8972-c6d4a5f06299
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.commerce_product.field_image
-    - field.storage.node.field_brand_name
-    - field.storage.node.field_location
-    - taxonomy.vocabulary.business_location
   module:
     - commerce_price
     - commerce_product
     - image
-    - node
-    - taxonomy
-id: discover
-label: Discover
+id: duplicate_of_discover_v2
+label: 'Discover Block Form & Results'
 module: views
 description: ''
 tag: ''
@@ -27,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Discover
+      title: 'Discover Results'
       fields:
         title:
           id: title
@@ -290,132 +285,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_location:
-          id: field_location
-          table: node__field_location
-          field: field_location
-          relationship: field_product_brand
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_brand_name:
-          id: field_brand_name
-          table: node__field_brand_name
-          field: field_brand_name
-          relationship: field_product_brand
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
         type: mini
         options:
@@ -489,7 +358,7 @@ display:
             operator_list: {  }
             identifier: title
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
@@ -497,99 +366,6 @@ display:
               content_editor: '0'
               administrator: '0'
             placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        field_location_target_id:
-          id: field_location_target_id
-          table: node__field_location
-          field: field_location_target_id
-          relationship: field_product_brand
-          group_type: group
-          admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_location_target_id_op
-            label: Location
-            description: ''
-            use_operator: false
-            operator: field_location_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_location_target_id
-            required: false
-            remember: true
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: 'Location (field_location)'
-            description: null
-            identifier: field_location_target_id
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
-          reduce_duplicates: true
-          vid: business_location
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: false
-        field_brand_name_value:
-          id: field_brand_name_value
-          table: node__field_brand_name
-          field: field_brand_name_value
-          relationship: field_product_brand
-          group_type: group
-          admin_label: ''
-          plugin_id: string
-          operator: '='
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_brand_name_value_op
-            label: Brand
-            description: ''
-            use_operator: false
-            operator: field_brand_name_value_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_brand_name_value
-            required: false
-            remember: true
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              content_editor: '0'
-              administrator: '0'
-            placeholder: 'Select brand'
           is_grouped: false
           group_info:
             label: ''
@@ -640,15 +416,6 @@ display:
           entity_field: product_id
           plugin_id: standard
           required: true
-        field_product_brand:
-          id: field_product_brand
-          table: commerce_product__field_product_brand
-          field: field_product_brand
-          relationship: product_id
-          group_type: group
-          admin_label: 'field_product_brand: Content'
-          plugin_id: standard
-          required: true
       use_ajax: true
       header: {  }
       footer: {  }
@@ -662,8 +429,6 @@ display:
         - url.query_args
       tags:
         - 'config:field.storage.commerce_product.field_image'
-        - 'config:field.storage.node.field_brand_name'
-        - 'config:field.storage.node.field_location'
   discover_search_block:
     id: discover_search_block
     display_title: Block
@@ -681,17 +446,15 @@ display:
         - url.query_args
       tags:
         - 'config:field.storage.commerce_product.field_image'
-        - 'config:field.storage.node.field_brand_name'
-        - 'config:field.storage.node.field_location'
-  search_form:
-    id: search_form
+  page_1:
+    id: page_1
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
       exposed_block: false
       display_extenders: {  }
-      path: discover
+      path: discover-results
     cache_metadata:
       max-age: -1
       contexts:
@@ -701,5 +464,3 @@ display:
         - url.query_args
       tags:
         - 'config:field.storage.commerce_product.field_image'
-        - 'config:field.storage.node.field_brand_name'
-        - 'config:field.storage.node.field_location'

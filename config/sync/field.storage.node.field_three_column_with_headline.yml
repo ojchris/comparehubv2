@@ -1,0 +1,19 @@
+uuid: 6b5bbe90-ab54-4a1a-9b09-4329567a2836
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_three_column_with_headline
+field_name: field_three_column_with_headline
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

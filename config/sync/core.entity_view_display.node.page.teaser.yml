@@ -5,6 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_about_us_our_team
+    - field.field.node.page.field_about_us_partners
+    - field.field.node.page.field_get_in_touch
+    - field.field.node.page.field_partners_sectors
+    - field.field.node.page.field_partners_two_column
+    - field.field.node.page.field_privacy_policy
+    - field.field.node.page.field_terms_and_condition
+    - field.field.node.page.field_three_column_with_headline
+    - field.field.node.page.field_who_we_are
     - node.type.page
   module:
     - text
@@ -28,5 +37,14 @@ content:
     weight: 101
     region: content
 hidden:
+  field_about_us_our_team: true
+  field_about_us_partners: true
+  field_get_in_touch: true
+  field_partners_sectors: true
+  field_partners_two_column: true
+  field_privacy_policy: true
+  field_terms_and_condition: true
+  field_three_column_with_headline: true
+  field_who_we_are: true
   langcode: true
   search_api_excerpt: true

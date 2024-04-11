@@ -1,0 +1,19 @@
+uuid: c2610b4c-9b0d-49ab-b37d-e6c66cd8e1b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_privacy_policy
+field_name: field_privacy_policy
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
