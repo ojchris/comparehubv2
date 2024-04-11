@@ -14,3 +14,13 @@ global:
 terms:
  js:
    js/terms.js: {}
+
+discover-script:
+  js:
+    js/discover.js: {}
+
+discover-style:
+  css:
+    theme:
+      css/discover_mobile.css: {}
+      css/discover.css: {}

@@ -15,6 +15,28 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
   if ($form_state->getBuildInfo()['callback_object'] instanceof \Drupal\commerce_cart\Form\AddToCartFormInterface) {
   $form[ 'actions' ][ 'submit' ][ '#value' ] = t( 'Add to Compare' );  
   }
+
+  // Turn views exposed filter Textfield (product_brand) into a Select list
+  if ($form['#id'] == 'views-exposed-form-discover-search-form') {
+    
+        $nids = \Drupal::entityQuery('node')->accessCheck(TRUE)->condition('type','brand')->execute();
+        $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+        $options = ['' => 'All'];
+    
+        foreach($nodes as $nid => $node) {
+          $value = $node->get('field_brand_name')->getString();
+    
+          if (isset($value)) {
+            $options[$value] = $value;
+          }
+        }
+    
+        if (isset($form['FIELD_NAME_value'])) {
+          $form['field_brand_name_value']['#type'] = 'select';
+          $form['field_brand_name_value']['#options'] = $options;
+          $form['field_brand_name_value']['#size'] = 1;
+        }
+      }
 }
 
 /**
