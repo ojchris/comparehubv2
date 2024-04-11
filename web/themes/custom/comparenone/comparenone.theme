@@ -21,7 +21,7 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
     
         $nids = \Drupal::entityQuery('node')->accessCheck(TRUE)->condition('type','brand')->execute();
         $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
-        $options = ['' => 'All'];
+        $options = ['' => 'Select brand'];
     
         foreach($nodes as $nid => $node) {
           $value = $node->get('field_brand_name')->getString();
@@ -31,7 +31,7 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
           }
         }
     
-        if (isset($form['FIELD_NAME_value'])) {
+        if (isset($form['field_brand_name_value'])) {
           $form['field_brand_name_value']['#type'] = 'select';
           $form['field_brand_name_value']['#options'] = $options;
           $form['field_brand_name_value']['#size'] = 1;
