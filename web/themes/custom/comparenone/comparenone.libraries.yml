@@ -24,3 +24,8 @@ discover-style:
     theme:
       css/discover_mobile.css: {}
       css/discover.css: {}
+
+cart:
+  css:
+    theme:
+      css/cart.css: {}

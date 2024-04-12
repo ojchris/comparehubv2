@@ -5,8 +5,8 @@
 
 .nav-items {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 }
 
 .nav-menu-close {
@@ -41,6 +41,92 @@
   gap: 66px;
   padding-top: 73px;
   padding-left: 28px;
+}
+
+.page-section-container-with-sidebar {
+  flex-direction: column;
+}
+
+  .page-sidebar {
+    width: auto;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+
+  .page-side-bar-container {
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* padding-top: 19px; */
+    /* padding-bottom: 190px; */
+    box-sizing: border-box;
+    box-shadow: none;
+    padding: 0px;
+}
+
+  .page-side-bar-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .page-side-bar-menu-item-link {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+  .page-side-bar-menu-item {
+
+  border-radius: 5px;
+    border: 1px solid #CCC;
+background: #FFF;
+box-shadow: 0px 4px 10px 0px rgba(27, 96, 190, 0.06);
+  }
+
+  .page-side-bar-menu-item.active {
+    border: 1px solid #1B60BE;
+  }
+
+  .bordered-page-section {
+    margin-top: 0px;
+  }
+
+  .section-content {
+    overflow-x: auto;
+  }
+
+  .app-table-alt-container {
+    min-width: 1000px;
+  }
+
+  .bordered-section-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+  .profile-page-section {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px
+  }
+
+  .bordered-page-section.profile-settings-page {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 43px;
+}
+
+  .main-form {
+    width: 100%;
+}
+
+.page-form-body {
+  width: 100%;
 }
   
 }

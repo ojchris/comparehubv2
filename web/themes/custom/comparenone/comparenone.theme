@@ -36,7 +36,23 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
           $form['field_brand_name_value']['#options'] = $options;
           $form['field_brand_name_value']['#size'] = 1;
         }
-      }
+  }
+
+   if ( $form['#form_id'] == 'user_login_form' ) {
+    // Add css class to elements
+    $form['actions']['submit']['#attributes']['class'][] = 'page-form-button';
+    // Add placeholders.
+    $form['name']['#attributes']['placeholder'] = t('Username');
+    $form['pass']['#attributes']['placeholder'] = t('Password');
+  }
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function comparenone_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['actions']['submit']['#value'] = t('Create account');
 }
 
 /**
@@ -65,4 +81,17 @@ function comparenone_preprocess_page(array &$variables): void {
 function comparenone_preprocess_node(array &$variables): void {
 
 }
+
+/**
+ * Implements hook_theme_suggestions_alter() for form templates.
+ * Creates unique template suggestion for form. 
+ * e.g. form--user-login-form.html.twig.
+ */
+function comparenone_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+
+  if ($hook == 'form' & !empty($variables['element']['#id'])) {
+    $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
+  }
+}
+
 

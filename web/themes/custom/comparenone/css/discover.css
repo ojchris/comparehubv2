@@ -215,10 +215,6 @@ font: var(--text-primary-n);
   justify-content: center;
 }
 
-button.app-input-search {
-  cursor: pointer;
-}
-
 .app-input-search::placeholder {
   color: #333;
   font-weight: var(--primary-font-regular);

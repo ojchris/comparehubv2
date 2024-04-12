@@ -183,33 +183,23 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     <section class="page-body">
-      <section class="page-columned-section page-secondary-mast">
-        <div class="section-column-one page-secondary-mast-column-one">
-          <div class="section-heading page-secondary-mast-heading">
-            {{ node.label }}
-          </div>
-          <div class="section-heading page-secondary-mast-caption">
 
-            {{node.body.value|raw}}
-
-            
-          
-          </div>
-        </div>
-        <div class="section-column-one page-secondary-mast-column-two">
-          <div class="section-content page-secondary-mast-content">
-            <div class="page-secondary-mast-callout-illustration">
-              <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/meeting_pic%20(1).png?v=1692134770479" class="page-secondary-mast-callout-image"/>
-              <div class="hanging-borders">
-                <div class="hanging-border hanging-border-main"></div>
-                <div class="hanging-border hanging-border-secondary"></div>
+            <div class="page-section">
+              <div class="section-content">
+                <div class="page-form">
+                  <div class="page-form-heading">
+                    <h1 class="page-form-heading-title">
+                      Log in
+                    </h1>
+                  </div>
+                  <div class="page-form-body"> 
+                  
+                  {{ page.content }}
+                   
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {{ page.content }}
 
             <section class="page-columned-section subscription-cta-section">
               <div class="section-column-one">
