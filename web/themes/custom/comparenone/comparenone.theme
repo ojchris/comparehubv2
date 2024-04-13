@@ -44,6 +44,9 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
     // Add placeholders.
     $form['name']['#attributes']['placeholder'] = t('Username');
     $form['pass']['#attributes']['placeholder'] = t('Password');
+
+    // Add a new attritube
+    $form['actions']['submit']['#attributes']['data-twig-form-submit'] = 'user-login-submit';
   }
 
 }
@@ -53,6 +56,8 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
  */
 function comparenone_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   $form['actions']['submit']['#value'] = t('Create account');
+  // Add a new attritube
+    $form['actions']['submit']['#attributes']['data-twig-form-submit'] = 'register-form-submit';
 }
 
 /**
@@ -91,6 +96,22 @@ function comparenone_theme_suggestions_alter(array &$suggestions, array $variabl
 
   if ($hook == 'form' & !empty($variables['element']['#id'])) {
     $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
+  }
+}
+
+/**
+ * @param $suggestions
+ * @param array $variables
+  * Implements hook_theme_suggestions_input_alter() for user form templates.
+ * Creates unique template suggestion for user form. 
+ * e.g. input--submit--user-login-submit.html.twig, input--submit--register-form-submit.html.twig.
+ */
+function comparenone_theme_suggestions_input_alter(&$suggestions, array $variables) {
+  $element = $variables['element'];
+
+  if (isset($element['#attributes']['data-twig-form-submit'])) {
+    $suggestions[] = 'input__' . $element['#type'] . '_' .  
+    str_replace('-', '_', $element['#attributes']['data-twig-form-submit']); // without str_replace the suggestion is invalid 
   }
 }
 
