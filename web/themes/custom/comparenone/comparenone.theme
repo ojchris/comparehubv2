@@ -52,10 +52,17 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
 }
 
 /**
- * Implements hook_form_FORM_ID_alter().
+ * Implements hook_form_USER_REGISTER_FORM_alter().
  */
 function comparenone_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   $form['actions']['submit']['#value'] = t('Create account');
+
+  if ( $form['#form_id'] == 'user_register_form' ) {
+    // Add placeholders.
+    $form['account']['name']['#attributes']['placeholder'] = t('Username');
+    $form['account']['mail']['#attributes']['placeholder'] = t('Email');
+  }
+
   // Add a new attritube
     $form['actions']['submit']['#attributes']['data-twig-form-submit'] = 'register-form-submit';
 }
