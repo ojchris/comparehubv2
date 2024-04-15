@@ -133,6 +133,7 @@ function comparenone_form_views_exposed_form_alter(&$form, &$form_state) {
 
          //field_location_target_id is the Filter Identifier Key
          $form['field_location_target_id']['#options']["All"] = 'Location';
+         $form['field_product_category_target_id']['#options']["All"] = 'Select category';
 
      }
 
