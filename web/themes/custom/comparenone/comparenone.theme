@@ -49,6 +49,10 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
     $form['actions']['submit']['#attributes']['data-twig-form-submit'] = 'user-login-submit';
   }
 
+  if ( $form['#form_id'] == 'views-exposed-form-discover-search-form' ) {
+    $form['field_location_target_id']['#options']['All'] = t('Location');
+  }
+
 }
 
 /**
@@ -121,5 +125,18 @@ function comparenone_theme_suggestions_input_alter(&$suggestions, array $variabl
     str_replace('-', '_', $element['#attributes']['data-twig-form-submit']); // without str_replace the suggestion is invalid 
   }
 }
+
+function comparenone_form_views_exposed_form_alter(&$form, &$form_state) {
+
+     //Got the Form Id by using inspect element/Firebug
+     if($form["#id"] == 'views-exposed-form-discover-search-form'){
+
+         //field_location_target_id is the Filter Identifier Key
+         $form['field_location_target_id']['#options']["All"] = 'Location';
+
+     }
+
+
+  }
 
 

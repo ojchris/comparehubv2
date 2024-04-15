@@ -10,12 +10,7 @@
  * @see template_preprocess_form()
  */
 #}
-{%
-  set class = [
-    'page-form-group',
-  ]
-%}
  
-<form{{ attributes.addClass(classes) }}>
+<form{{ attributes }}>
   {{ children }}
 </form>
