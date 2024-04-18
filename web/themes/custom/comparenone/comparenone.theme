@@ -49,10 +49,6 @@ function comparenone_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $fo
     $form['actions']['submit']['#attributes']['data-twig-form-submit'] = 'user-login-submit';
   }
 
-  if ( $form['#form_id'] == 'views-exposed-form-discover-search-form' ) {
-    $form['field_location_target_id']['#options']['All'] = t('Location');
-  }
-
 }
 
 /**
@@ -108,6 +104,24 @@ function comparenone_theme_suggestions_alter(array &$suggestions, array $variabl
   if ($hook == 'form' & !empty($variables['element']['#id'])) {
     $suggestions[] = 'form__' . str_replace('-', '_', $variables['element']['#id']);
   }
+
+  if ($hook === 'select' && isset($variables['element']['#attributes']['data-drupal-selector']) && $variables['element']['#attributes']['data-drupal-selector'] == 'edit-field-product-category-target-id') {
+    $suggestions[] = 'select__' . str_replace('-', '_', $variables['element']['#attributes']['data-drupal-selector']);
+  }
+
+  if ($hook === 'select' && isset($variables['element']['#attributes']['data-drupal-selector']) && $variables['element']['#attributes']['data-drupal-selector'] == 'edit-field-location-target-id') {
+    $suggestions[] = 'select__' . str_replace('-', '_', $variables['element']['#attributes']['data-drupal-selector']);
+  }
+
+  if ($hook === 'select' && isset($variables['element']['#attributes']['data-drupal-selector']) && $variables['element']['#attributes']['data-drupal-selector'] == 'edit-field-brand-name-value') {
+    $suggestions[] = 'select__' . str_replace('-', '_', $variables['element']['#attributes']['data-drupal-selector']);
+  }
+
+  /****
+  if ($hook === 'input' && isset($variables['element']['#attributes']['data-drupal-selector']) && $variables['element']['#attributes']['data-drupal-selector'] == 'edit-title') {
+    $suggestions[] = 'input__textfield' .'_' . str_replace('-', '_', $variables['element']['#attributes']['data-drupal-selector']);
+  }
+  ****/
 }
 
 /**
@@ -124,6 +138,10 @@ function comparenone_theme_suggestions_input_alter(&$suggestions, array $variabl
     $suggestions[] = 'input__' . $element['#type'] . '_' .  
     str_replace('-', '_', $element['#attributes']['data-twig-form-submit']); // without str_replace the suggestion is invalid 
   }
+
+   if (isset($element['#attributes']['data-element-suggestion'])) {
+    $suggestions[] = 'input__textfield' .'_' . str_replace('-', '_', $variables['element']['#attributes']['data-element-suggestion']);
+  }
 }
 
 function comparenone_form_views_exposed_form_alter(&$form, &$form_state) {
@@ -135,9 +153,12 @@ function comparenone_form_views_exposed_form_alter(&$form, &$form_state) {
          $form['field_location_target_id']['#options']["All"] = 'Location';
          $form['field_product_category_target_id']['#options']["All"] = 'Select category';
 
+         // Add a new attritube to submit input
+          $form['actions']['submit']['#attributes']['data-twig-form-submit'] = 'discover-exposed-form-submit';
+
+          // Add a new attritube to submit input
+          $form['title']['#attributes']['data-element-suggestion'] = 'title-discover-exposed-form';
      }
-
-
   }
 
 

@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.default.field_description
     - field.field.commerce_product.default.field_image
     - field.field.commerce_product.default.field_product_brand
+    - field.field.commerce_product.default.field_product_category
   module:
     - commerce_product
     - image
@@ -43,6 +44,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_product_category:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 5
     region: content
   title:
     type: string
