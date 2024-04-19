@@ -293,8 +293,11 @@ box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 .display-product-name {
+  display: block;
   font-size: 13px;
   font-family: var(--tertiary-font);
+  height: 30px;
+  padding: 10px 0;
 }
 
 .display-product-action {
