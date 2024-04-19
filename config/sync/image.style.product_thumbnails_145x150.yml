@@ -1,0 +1,15 @@
+uuid: 30e3fc73-b036-4c0c-8771-6eb28f0f22c4
+langcode: en
+status: true
+dependencies: {  }
+name: product_thumbnails_145x150
+label: 'Product Thumbnails (145x150)'
+effects:
+  95f61968-003f-4179-8846-bf87adc7ec61:
+    uuid: 95f61968-003f-4179-8846-bf87adc7ec61
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 145
+      height: 150
+      anchor: center-center
