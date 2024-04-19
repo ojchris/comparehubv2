@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0089e9b2b522a94cc4e7f8009e48b9e8",
+    "content-hash": "f121a07657c56ebd9194f4a23c28c455",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1611,6 +1611,193 @@
             ],
             "description": "Drupal Commerce is a flexible eCommerce solution.",
             "homepage": "https://drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_add_to_cart_link",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_add_to_cart_link.git",
+                "reference": "2.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_add_to_cart_link-2.0.6.zip",
+                "reference": "2.0.6",
+                "shasum": "4e71caea67b03ae882faba04f453fa4c86b3d7cf"
+            },
+            "require": {
+                "drupal/commerce": "^2.29 || 3",
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^9.2 || ^10"
+            },
+            "require-dev": {
+                "drupal/commerce_wishlist": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.6",
+                    "datestamp": "1691479625",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mag. Andreas Mayr (agoradesign)",
+                    "homepage": "https://www.drupal.org/u/agoradesign",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a field formatter for Commerce product variations having an add to cart link instead of a form.",
+            "homepage": "https://www.drupal.org/project/commerce_add_to_cart_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_add_to_cart_link",
+                "issues": "https://drupal.org/project/issues/commerce_add_to_cart_link"
+            }
+        },
+        {
+            "name": "drupal/commerce_cart",
+            "version": "2.38.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.38",
+                    "datestamp": "1707150193",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Implements the shopping cart system and add to cart features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_number_pattern",
+            "version": "2.38.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.38",
+                    "datestamp": "1707150193",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides configurable patterns for generating sequential numbers.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_order",
+            "version": "2.38.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_number_pattern": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "^9.3 || ^10",
+                "drupal/entity_reference_revisions": "*",
+                "drupal/profile": "*",
+                "drupal/state_machine": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.38",
+                    "datestamp": "1707150193",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Defines the Order entity and associated features.",
+            "homepage": "https://www.drupal.org/project/commerce",
             "support": {
                 "source": "https://git.drupalcode.org/project/commerce"
             }

@@ -19,6 +19,7 @@ console/
 
 # Ignore theme nvm directory
 /web/themes/custom/comparenone/node_modules/
+/web/themes/custom/comparenone/templates/form/discover form-needs work
 
 # Ignore database backups
 /db/
