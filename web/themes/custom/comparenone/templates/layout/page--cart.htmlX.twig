@@ -43,6 +43,8 @@
  * @see html.html.twig
  */
 #}
+<div class="layout-container">
+
   <header role="banner" class="page-header">
 
       <section class="nav-items">
@@ -181,351 +183,125 @@
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     <section class="page-body">
-    
-      <div class="page-dialog dialog-full-height dialog-full-height-white-bg" id="selectBrandDialog">
-        
-        <div class="dialog-container">
-          <div class="dialog-heading dialog-section ">
-            <div class="dialog-heading-nav-icon" data-modal-id="selectBrandDialog">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.828 11.0002H20V13.0002H7.828L13.192 18.3642L11.778 19.7782L4 12.0002L11.778 4.22217L13.192 5.63617L7.828 11.0002Z" fill="#344054"/>
-                </svg>
-                
-            </div>
-            <div class="dialog-heading-text">
-              Select Brand
-            </div>
-          </div>
-          <div class="dialog-sub-heading dialog-section ">
-            <div class="dialog-sub-heading-text">
-              Choose your preferred restaurant or brand
-            </div>
-          </div>
-          <div class="dialog-content dialog-section">
-            <div class="dialog-filter-control">
-              <div class="dialog-input-container">
-                <input type="text" placeholder="Search brands" class="dialog-input">
-              </div>
-              <div class="dialog-input-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  
-              </div>
-            </div>
-            <div class="dialog-filter-content">
-              <div class="dialog-filter-content-text">
-                The Place
-              </div>
-              <div class="dialog-filter-content-text">
-                The Place
-              </div>
-              <div class="dialog-filter-content-text">
-                The Place
-              </div>
-            </div>
-          </div>
-        </div> 
-    </div>
-
-    <div class="page-dialog dialog-full-height dialog-full-height-white-bg" id="selectCategoryDialog">
-        
-      <div class="dialog-container">
-        <div class="dialog-heading dialog-section ">
-          <div class="dialog-heading-nav-icon" data-modal-id="selectCategoryDialog">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.828 11.0002H20V13.0002H7.828L13.192 18.3642L11.778 19.7782L4 12.0002L11.778 4.22217L13.192 5.63617L7.828 11.0002Z" fill="#344054"/>
-              </svg>
-              
-          </div>
-          <div class="dialog-heading-text">
-            Select Category
-          </div>
-        </div>
-        <div class="dialog-sub-heading dialog-section ">
-          <div class="dialog-sub-heading-text">
-            Choose your preferred category
-          </div>
-        </div>
-        <div class="dialog-content dialog-section">
-          <div class="dialog-filter-control">
-            <div class="dialog-input-container">
-              <input type="text" placeholder="Search category" class="dialog-input">
-            </div>
-            <div class="dialog-input-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
-            </div>
-          </div>
-          <div class="dialog-filter-content">
-            <div class="dialog-filter-content-text">
-              Food
-            </div>
-            <div class="dialog-filter-content-text">
-              Drink
-            </div>
-            <div class="dialog-filter-content-text">
-              Dinner
-            </div>
-          </div>
-        </div>
-      </div> 
-  </div>
-
-  <div class="page-dialog dialog-full-height dialog-full-height-white-bg" id="selectLocationDialog">
-        
-    <div class="dialog-container">
-      <div class="dialog-heading dialog-section ">
-        <div class="dialog-heading-nav-icon" data-modal-id="selectLocationDialog">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.828 11.0002H20V13.0002H7.828L13.192 18.3642L11.778 19.7782L4 12.0002L11.778 4.22217L13.192 5.63617L7.828 11.0002Z" fill="#344054"/>
-            </svg>
-            
-        </div>
-        <div class="dialog-heading-text">
-          Select Location
-        </div>
-      </div>
-      <div class="dialog-sub-heading dialog-section ">
-        <div class="dialog-sub-heading-text">
-          Choose your preferred location
-        </div>
-      </div>
-      <div class="dialog-content dialog-section">
-        <div class="dialog-filter-control">
-          <div class="dialog-input-container">
-            <input type="text" placeholder="Search location" class="dialog-input">
-          </div>
-          <div class="dialog-input-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              
-          </div>
-        </div>
-        <div class="dialog-filter-content">
-          <div class="dialog-filter-content-text">
-            Lagos
-          </div>
-          <div class="dialog-filter-content-text">
-            Abuja
-          </div>
-          <div class="dialog-filter-content-text">
-            Ibadan
-          </div>
-          <div class="dialog-filter-content-text">
-            Ogun
-          </div>
-          <div class="dialog-filter-content-text">
-            Enugu
-          </div>
-        </div>
-      </div>
-    </div> 
-</div>
-     <!-- <section class="page-section page-centered-mast">
-         <div class="mast-image-container mast-image-right">
-          <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/28a0790caa86e0477b138c8595be09a0.png?v=1692044981442" alt="" class="mast-image">
-         </div>
-         <div class="mast-image-container mast-image-left">
-          <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/5f46ea7e0ae299dda96c56f401c612b2.png?v=1692044977643" alt="" class="mast-image">
-         </div>
-         <div class="section-heading centered-mast-heading discover-centered-mast-heading">
-          Discover and compare
-         </div>
-         <div class="section-subheading centered-mast-subheading">
-          <div class="centered-mast-subheading-text">
-            Find everything you need from huge collection of products, search, compare and choose from the best brand
-          </div>
-         </div>
-         <div class="section-content centered-mast-content">
-          <div class="centered-mast-filter-controls">
-            <div class="centered-mast-filter-control">
-              <div class="app-custom-dropdown">
-                <div class="custom-dropdown-label">
-                  Select category
-                </div>
-                <div class="custom-dropdown-icon" data-for-dialog="selectCategoryDialog">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.4" d="M6.07975 8.67993H11.4398L14.8195 13.1831L13.1562 14.8464C12.5215 15.4811 11.488 15.4811 10.8533 14.8464L5.6733 9.66638C5.30736 9.30043 5.56651 8.67993 6.07975 8.67993Z" fill="#667085" stroke="#667085"/>
-                    <path d="M15.5344 12.4689L12.6908 8.67993H17.9204C18.4335 8.67993 18.6943 9.30178 18.3354 9.66787L15.5344 12.4689Z" fill="#667085" stroke="#667085"/>
-                    </svg>                    
-                </div>
-              </div>
-            </div>
-            <div class="centered-mast-filter-control">
-              <div class="app-custom-dropdown">
-                <div class="custom-dropdown-label">
-                  Location
-                </div>
-                <div class="custom-dropdown-icon" data-for-dialog="selectLocationDialog">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.4" d="M6.07975 8.67993H11.4398L14.8195 13.1831L13.1562 14.8464C12.5215 15.4811 11.488 15.4811 10.8533 14.8464L5.6733 9.66638C5.30736 9.30043 5.56651 8.67993 6.07975 8.67993Z" fill="#667085" stroke="#667085"/>
-                    <path d="M15.5344 12.4689L12.6908 8.67993H17.9204C18.4335 8.67993 18.6943 9.30178 18.3354 9.66787L15.5344 12.4689Z" fill="#667085" stroke="#667085"/>
-                    </svg>                    
-                </div>
-              </div>
-            </div>
-            <div class="centered-mast-filter-control">
-              <div class="app-custom-dropdown">
-                <div class="custom-dropdown-label">
-                  Select Brand
-                </div>
-                <div class="custom-dropdown-icon" data-for-dialog="selectBrandDialog">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.4" d="M6.07975 8.67993H11.4398L14.8195 13.1831L13.1562 14.8464C12.5215 15.4811 11.488 15.4811 10.8533 14.8464L5.6733 9.66638C5.30736 9.30043 5.56651 8.67993 6.07975 8.67993Z" fill="#667085" stroke="#667085"/>
-                    <path d="M15.5344 12.4689L12.6908 8.67993H17.9204C18.4335 8.67993 18.6943 9.30178 18.3354 9.66787L15.5344 12.4689Z" fill="#667085" stroke="#667085"/>
-                    </svg>                    
-                </div>
-              </div>
-            </div>
-            <div class="centered-mast-filter-control">
-              <div class="filter-control-input app-input-container">
-                <input type="text" placeholder="Enter product name" class="app-input app-input-product-name" />
-              </div>
-            </div>
-            <div class="centered-mast-filter-control">
-              <div class="filter-control-input app-input-container">
-                <button type="button" class="app-input app-input-search">
-                  <span class="search-button-text">
-                    Search Now
-                  </span>
-                  <span class="search-button-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M21.0004 20.9999L16.6504 16.6499" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>                      
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-         </div>
-      </section>
-    -->
-
-      {{ page.content }}
-
-      <section class="page-section main-discover-content-section">
+      <section class="page-section">
         <div class="section-content">
-          <div class="top-brands-section">
-            <div class="top-brands-heading">
-              Top Brands
+          <div class="app-table">
+            <div class="app-table-caption">
+              Compare Cart
             </div>
-            <div class="top-brands-images">
-            
-            
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/67de5a38332983f07107064943f856f9.png?v=1692045430272" alt="" class="top-brand-image">
+            <div class="app-table-container">
+              <div class="app-table-heading">
+                <div class="app-table-heading-row">
+                  <div class="app-table-heading-column app-table-column col-one">Product</div>
+                  <div class="app-table-heading-column app-table-column col-two">Price</div>
+                  <div class="app-table-heading-column app-table-column col-three">Brand Name</div>
+                  <div class="app-table-heading-column app-table-column col-four"></div>
+                </div>
               </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/5717c5f66e1fcf16d35c83f56b4c71d6.png?v=1692058206301" alt="" class="top-brand-image">
+              <div class="app-table-body">
+                <div class="app-table-body-row">
+                  <div class="app-table-body-column app-table-column col-one">
+                    <div class="cart-product">
+                      <div class="cart-product-image-container">
+                        <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/a33299282a6854676ed5569528e2b525.jpeg?v=1692139317184" alt="" class="cart-product-image">
+                      </div>
+                      <div class="cart-product-name">
+                        Apple iPhone XS color black
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-table-body-column app-table-column col-two">
+                    ₦15,000
+                  </div>
+                  <div class="app-table-body-column app-table-column col-three">Orelan Store</div>
+                  <div class="app-table-body-column app-table-column col-four">
+                    <div class="cart-context-info">
+                      <div class="cart-context-action">
+                        <a href="" class="cart-context-action-link">Remove</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-table-body-row">
+                  <div class="app-table-body-column app-table-column col-one">
+                    <div class="cart-product">
+                      <div class="cart-product-image-container">
+                        <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/a33299282a6854676ed5569528e2b525.jpeg?v=1692139317184" alt="" class="cart-product-image">
+                      </div>
+                      <div class="cart-product-name">
+                        Apple iPhone XS color black
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-table-body-column app-table-column col-two">
+                    ₦15,000
+                  </div>
+                  <div class="app-table-body-column app-table-column col-three">Mega Phones</div>
+                  <div class="app-table-body-column app-table-column col-four">
+                    <div class="cart-context-info">
+                      <div class="cart-context-action">
+                        <a href="" class="cart-context-action-link">Remove</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-table-body-row">
+                  <div class="app-table-body-column app-table-column col-one">
+                    <div class="cart-product">
+                      <div class="cart-product-image-container">
+                        <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/a33299282a6854676ed5569528e2b525.jpeg?v=1692139317184" alt="" class="cart-product-image">
+                      </div>
+                      <div class="cart-product-name">
+                        Apple iPhone XS color black
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="app-table-body-column app-table-column col-two">
+                    ₦15,000
+                  </div>
+                  <div class="app-table-body-column app-table-column col-three">Ozone Markets</div>
+                  <div class="app-table-body-column app-table-column col-four">
+                    <div class="cart-context-info">
+                      <div class="cart-context-action">
+                        <a href="" class="cart-context-action-link">Remove</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/db857f06c8a049b0ac9696352e4a7cc7.png?v=1692058156132" alt="" class="top-brand-image top-brand-image-slightly-bigger">
+              <div class="app-table-action-items">
+                <div class="app-table-action-item">
+                   
+                </div>
+                <div class="app-table-action-item">
+                  <div class="app-table-action-buttons">
+                    <button type="button" class="btn btn-cta btn-primary-outline"> Update Cart </button>
+                    <button type="button" class="btn btn-with-icon btn-cta btn-primary">
+                      <span class="btn-text">Compare Now</span>
+                      <span class="btn-icon">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_160_8805)">
+                          <path d="M1.5 4V10H7.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M23.5 20V14H17.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M20.99 9.00008C20.4828 7.56686 19.6209 6.28548 18.4845 5.27549C17.3482 4.26551 15.9745 3.55984 14.4917 3.22433C13.0089 2.88883 11.4652 2.93442 10.0048 3.35685C8.54437 3.77928 7.21475 4.56479 6.14 5.64008L1.5 10.0001M23.5 14.0001L18.86 18.3601C17.7853 19.4354 16.4556 20.2209 14.9952 20.6433C13.5348 21.0657 11.9911 21.1113 10.5083 20.7758C9.02547 20.4403 7.6518 19.7346 6.51547 18.7247C5.37913 17.7147 4.51717 16.4333 4.01 15.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_160_8805">
+                          <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                          
+                      </span>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/0958c7f53a6a24fbf754822e0da8d3fc.png?v=1692058136998" alt="" class="top-brand-image top-brand-image-slightly-bigger">
-              </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/logo%201.svg?v=1692058110194" alt="" class="top-brand-image">
-              </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/f70b1b37de232f979db2f834cc3f3d0a.png?v=1692058088298" alt="" class="top-brand-image">
-              </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/7a0949ec6813c657b2b5b737f261af93.png?v=1692058050619" alt="" class="top-brand-image">
-              </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/67ca5f7a49415674b9ea34aecb869a94.png?v=1692057927472" alt="" class="top-brand-image">
-              </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/67ca5f7a49415674b9ea34aecb869a94.png?v=1692057927472" alt="" class="top-brand-image">
-              </div>
-              <div class="top-brand-image-container">
-                <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/67ca5f7a49415674b9ea34aecb869a94.png?v=1692057927472" alt="" class="top-brand-image">
-              </div>
+              
             </div>
-          </div>
-<div class="display-products">
-           
-          </div>
-          <div class="pagination-container">
-            <ul class="pagination">
-              <li class="pagination-item pagination-item-first pagination-item-disabled">
-                <a href="#" class="pagination-item-link">
-                  ‹
-                </a>
-              </li>
-              <li class="pagination-item pagination-item-active">
-                <a href="#" class="pagination-item-link">
-                  1
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  2
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  3
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  4
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  5
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  6
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  7
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  8
-                </a>
-              </li>
-              <li class="pagination-item pagination-item-disabled">
-                <a href="#" class="pagination-item-link">
-                  ...
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  11
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination-item-link">
-                  12
-                </a>
-              </li>
-              <li class="pagination-item pagination-item-last">
-                <a href="#" class="pagination-item-link">
-                  ›
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
-    </section>
+      </section>
 
 
     {% if page.sidebar_first %}
@@ -701,4 +477,4 @@
       </section>
     </footer>
   {% endif %}
-{{ attach_library('comparenone/discover-script') }}
+</div>{# /.layout-container #}
