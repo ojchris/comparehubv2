@@ -102,9 +102,10 @@
   justify-content: flex-end;
 }
 
-.cart-context-action-link {
+.cart-context-info .delete-order-item {
   text-decoration: none;
   color: var(--page-red);
+  border: none;
 }
 
 .cart-context-pill {
