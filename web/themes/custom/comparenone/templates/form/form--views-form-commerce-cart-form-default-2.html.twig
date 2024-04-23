@@ -16,5 +16,13 @@
  ]
  %}
 <form{{ attributes.addClass(classes) }}>
+  <div class="app-table-heading">
+    <div class="app-table-heading-row">
+        <div class="app-table-heading-column app-table-column col-one">Product</div>
+        <div class="app-table-heading-column app-table-column col-two">Price</div>
+        <div class="app-table-heading-column app-table-column col-three">Brand Name</div>
+        <div class="app-table-heading-column app-table-column col-four"></div>
+    </div>
+  </div>
   {{ children }}
 </form>

@@ -63,7 +63,7 @@
   align-items: center;
 }
 
-.cart-product-image {
+.cart-product-image-container img {
   width: 95%;
   object-fit: cover;
 }

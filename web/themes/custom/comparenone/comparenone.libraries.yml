@@ -25,7 +25,8 @@ discover-style:
       css/discover_mobile.css: {}
       css/discover.css: {}
 
-cart:
+cart-styles:
   css:
     theme:
       css/cart.css: {}
+      css/compare-result.mobile.css: {}
