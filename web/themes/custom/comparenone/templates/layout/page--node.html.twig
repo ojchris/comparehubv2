@@ -95,18 +95,18 @@
         <div class="nav-menu">
           <ul class="menu-items">
             <li class="menu-item">
-              <a href="index.html" class="menu-item-link page-link"> Home </a>
+              <a href="/" class="menu-item-link page-link"> Home </a>
             </li>
             <li class="menu-item">
-              <a href="about.html" class="menu-item-link page-link">
+              <a href="about" class="menu-item-link page-link">
                 About Us
               </a>
             </li>
             <li class="menu-item">
-              <a href="partners.html" class="menu-item-link page-link"> Partners </a>
+              <a href="partners" class="menu-item-link page-link"> Partners </a>
             </li>
             <li class="menu-item">
-              <a href="contact.html" class="menu-item-link page-link"> Contact Us </a>
+              <a href="contact" class="menu-item-link page-link"> Contact Us </a>
             </li>
           </ul>
         </div>
@@ -143,7 +143,7 @@
                 
             </span>
             <span class="cta-item-link-text">
-              Hi Allen
+              Hi {{ user.displayname }}
             </span>
           </a>
         </div>
@@ -191,8 +191,6 @@
           <div class="section-heading page-secondary-mast-caption">
 
             {{node.body.value|raw}}
-
-            {{ page.content }}
           
           </div>
         </div>
@@ -209,7 +207,23 @@
         </div>
       </section>
 
-      
+      {{node.field_three_column_with_headline.value|raw}}
+
+      {{node.field_who_we_are.value|raw}}
+
+      {{node.field_about_us_partners.value|raw}}
+
+      {{node.field_partners_sectors.value|raw}}
+
+      {{node.field_partners_two_column.value|raw}}
+
+      {{node.field_about_us_our_team.value|raw}}
+
+       {{node.field_about_us_our_team.value|raw}}
+
+        {{node.field_about_us_our_team.value|raw}}
+
+      {{node.field_get_in_touch.value|raw}}
 
             <section class="page-columned-section subscription-cta-section">
               <div class="section-column-one">

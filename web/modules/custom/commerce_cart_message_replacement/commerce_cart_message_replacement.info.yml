@@ -1,0 +1,5 @@
+name: 'Commerce Cart Message Replacement'
+type: module
+description: 'Change the commerce cart status message'
+package: 'Commerce'
+core_version_requirement: ^10
