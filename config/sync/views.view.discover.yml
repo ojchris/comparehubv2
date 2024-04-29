@@ -458,7 +458,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: display-product-action-text
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -470,7 +470,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-          text: 'Add to compare'
+          text: 'Add to compare cart'
           quantity: '1'
           combine: 1
       pager:
