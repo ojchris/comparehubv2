@@ -85,6 +85,16 @@ function comparenone_preprocess_page(array &$variables): void {
     else{
         $variables['title'] = $variables['page']['#title'];
     }
+
+    // Current user compare cart item count.
+    $store_id = 1;
+    $order_type = 'default';
+    $cart_manager = \Drupal::service('commerce_cart.cart_manager');
+    $cart_provider = \Drupal::service('commerce_cart.cart_provider');
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $store = $entity_type_manager->getStorage('commerce_store')->load($store_id); 
+    $cart = $cart_provider->getCart($order_type, $store);
+    $variables['num_cart_items'] = count($cart-> getItems());
 }
 
 /**
