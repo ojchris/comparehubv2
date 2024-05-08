@@ -7,7 +7,7 @@ dependencies:
     - field.storage.commerce_product.field_product_category
     - field.storage.node.field_brand_name
     - field.storage.node.field_location
-    - image.style.product_thumbnails_145x150
+    - image.style.discover_top_brand_thumbnail
     - taxonomy.vocabulary.business_location
     - taxonomy.vocabulary.product_category
     - views.view.brand_logos
@@ -87,7 +87,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: product_thumbnails_145x150
+            image_style: discover_top_brand_thumbnail
             image_loading:
               attribute: lazy
           group_column: ''
