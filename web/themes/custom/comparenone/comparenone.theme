@@ -103,10 +103,11 @@ function comparenone_preprocess_page(array &$variables): void {
         foreach ($existing_carts as $existing_cart) {
           assert($existing_cart instanceof \Drupal\commerce_order\Entity\OrderInterface);
           if ($existing_cart->hasItems()) {
-            $variables['cart_item_count'] += count($existing_cart-> getItems());
+            $cart_item_count += count($existing_cart-> getItems());
           break;
         }
       }
+      $variables['cart_item_count'] = $cart_item_count;
     } // cart count
 }
 
