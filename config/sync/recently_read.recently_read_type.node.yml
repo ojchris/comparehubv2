@@ -1,0 +1,7 @@
+uuid: 5ea4c148-a4dc-4655-9314-831e1029dd1e
+langcode: en
+status: true
+dependencies: {  }
+id: node
+label: Content
+types: {  }

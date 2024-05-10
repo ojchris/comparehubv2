@@ -1,0 +1,7 @@
+uuid: 984cbae4-9b70-4c75-9441-5fa8fad06aef
+langcode: en
+status: true
+dependencies: {  }
+id: commerce_product_variation
+label: 'Product variation'
+types: {  }
