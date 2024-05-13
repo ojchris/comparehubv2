@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64df01a29e85e01eb0c68e75d0099cb2",
+    "content-hash": "6390ee49e06168d4e6ca8807af264ff7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3260,6 +3260,58 @@
                 "source": "http://git.drupal.org/project/search_api_solr.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "chat": "https://drupalchat.me/channel/search"
+            }
+        },
+        {
+            "name": "drupal/search_tracking",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_tracking.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_tracking-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "1cb8704870e75e046935273999edec9e68910a30"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1704954010",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ajish S",
+                    "homepage": "https://www.drupal.org/user/3768360"
+                },
+                {
+                    "name": "Amal_P",
+                    "homepage": "https://www.drupal.org/user/3768372"
+                },
+                {
+                    "name": "Robin Rosh R",
+                    "homepage": "https://www.drupal.org/user/3721945"
+                }
+            ],
+            "description": "Provides searched content history with the provided form.",
+            "homepage": "https://www.drupal.org/project/search_tracking",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_tracking"
             }
         },
         {
