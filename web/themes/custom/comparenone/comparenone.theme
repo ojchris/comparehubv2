@@ -109,6 +109,13 @@ function comparenone_preprocess_page(array &$variables): void {
       }
       $variables['cart_item_count'] = $cart_item_count;
     } // cart count
+
+    // Get current user ID.
+    $currentUser = \Drupal::currentUser();
+    $currentUserId = $currentUser->id();
+
+    $variables['user_id'] = $currentUserId;
+    
 }
 
 /**
