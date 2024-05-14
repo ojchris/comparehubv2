@@ -87,15 +87,6 @@ function comparenone_preprocess_page(array &$variables): void {
     }
 
     // Current user compare cart item count.
-    $store_id = 1;
-    $order_type = 'default';
-    $cart_manager = \Drupal::service('commerce_cart.cart_manager');
-    $cart_provider = \Drupal::service('commerce_cart.cart_provider');
-    $entity_type_manager = \Drupal::entityTypeManager();
-    $store = $entity_type_manager->getStorage('commerce_store')->load($store_id); 
-    $cart = $cart_provider->getCart($order_type, $store);
-    $variables['num_cart_items'] = count($cart->getItems()); 
-
     $cart_provider = \Drupal::getContainer()->get('commerce_cart.cart_provider');
     $existing_carts = $cart_provider->getCarts();
     $cart_item_count=0;
@@ -103,7 +94,7 @@ function comparenone_preprocess_page(array &$variables): void {
         foreach ($existing_carts as $existing_cart) {
           assert($existing_cart instanceof \Drupal\commerce_order\Entity\OrderInterface);
           if ($existing_cart->hasItems()) {
-            $cart_item_count += count($existing_cart-> getItems());
+            $cart_item_count += count($existing_cart->getItems());
           break;
         }
       }
@@ -113,8 +104,18 @@ function comparenone_preprocess_page(array &$variables): void {
     // Get current user ID.
     $currentUser = \Drupal::currentUser();
     $currentUserId = $currentUser->id();
-
     $variables['user_id'] = $currentUserId;
+
+    $userAccount = \Drupal\user\Entity\User::load($currentUserId);
+
+    // Retrieve field data from that user
+    //$userBody = $userAccount->get('body')->value;
+
+    $userEmail = $userAccount->get('mail')->value;
+    $userName = $userAccount->get('name')->value;
+
+    $variables['user_email'] = $userEmail;
+    $variables['user_name'] = $userName;
     
 }
 
