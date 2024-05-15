@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.page.field_about_us_our_team
     - field.field.node.page.field_about_us_partners
     - field.field.node.page.field_get_in_touch
+    - field.field.node.page.field_header_image
     - field.field.node.page.field_partners_sectors
     - field.field.node.page.field_partners_two_column
     - field.field.node.page.field_privacy_policy
@@ -15,6 +16,7 @@ dependencies:
     - field.field.node.page.field_who_we_are
     - node.type.page
   module:
+    - image
     - text
     - user
 _core:
@@ -51,6 +53,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 9
+    region: content
+  field_header_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 12
     region: content
   field_partners_sectors:
     type: text_default

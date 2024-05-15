@@ -150,10 +150,10 @@
 
         {% else %}
           <div class="cta-item">
-          <a href="user/login" class="cta-item-link page-link btn btn-cta">Log in</a>
+          <a href="/user/login" class="cta-item-link page-link btn btn-cta">Log in</a>
         </div>
         <div class="cta-item">
-          <a href="user/register">          
+          <a href="/user/register">          
             <button type="button" class="btn btn-cta btn-primary">Sign Up</button>
           </a>
         </div>
@@ -197,7 +197,7 @@
         <div class="section-column-one page-secondary-mast-column-two">
           <div class="section-content page-secondary-mast-content">
             <div class="page-secondary-mast-callout-illustration">
-              <img src="https://cdn.glitch.global/2ca87fd5-f4b7-46d3-bcfe-a2900f7bead1/meeting_pic%20(1).png?v=1692134770479" class="page-secondary-mast-callout-image"/>
+              <img src="{{file_url(node.field_header_image.entity.fileuri)}}" alt="node.field_header_image.entity.alt.value" title="node.field_header_image.entity.title.value" class="page-secondary-mast-callout-image" />
               <div class="hanging-borders">
                 <div class="hanging-border hanging-border-main"></div>
                 <div class="hanging-border hanging-border-secondary"></div>
