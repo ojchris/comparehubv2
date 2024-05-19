@@ -455,7 +455,7 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           columns:
             title: title
             price__number: price__number
@@ -466,28 +466,28 @@ display:
             title:
               sortable: false
               default_sort_order: asc
-              align: views-align-left
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''
             price__number:
               sortable: false
               default_sort_order: asc
-              align: views-align-left
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''
             field_product_brand:
               sortable: false
               default_sort_order: asc
-              align: views-align-left
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''
             created:
               sortable: false
               default_sort_order: asc
-              align: views-align-left
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''

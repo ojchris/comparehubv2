@@ -1,19 +1,22 @@
-uuid: 6e61342f-367e-4317-84a9-d0c334f653b3
+uuid: ec9ac2ce-ecef-4a7a-89c8-1124def0bf32
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_form_mode.user.account_details
     - field.field.user.user.field_first_name
     - field.field.user.user.field_last_name
     - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
+    - image
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
-id: user.user.default
+id: user.user.account_details
 targetEntityType: user
 bundle: user
-mode: default
+mode: account_details
 content:
   account:
     weight: 0
@@ -36,10 +39,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  user_picture:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
 hidden:
   contact: true
   customer_profiles: true
   langcode: true
   language: true
   timezone: true
-  user_picture: true

@@ -1,0 +1,11 @@
+uuid: abf8e93c-ff63-423c-98c7-3e9790517d8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.account_details
+label: 'Account details'
+description: 'Without the password and time setting'
+targetEntityType: user
+cache: true

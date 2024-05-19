@@ -1,0 +1,25 @@
+uuid: b5a7f4d1-6aa6-4939-b614-4d9dd5ed5781
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recently_viewed_products
+  module:
+    - views
+  theme:
+    - comparenone
+id: comparenone_views_block__recently_viewed_products_block_1
+theme: comparenone
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:recently_viewed_products-block_1'
+settings:
+  id: 'views_block:recently_viewed_products-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }
