@@ -28,6 +28,7 @@
         "drupal/eva": "^3.0",
         "drupal/facets": "^3.0@beta",
         "drupal/feeds": "^3.0@beta",
+        "drupal/fullcalendar_view": "^5.1",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/paragraphs": "^1.17",
         "drupal/recently_read": "1.x-dev@dev",
