@@ -37,6 +37,7 @@
         "drupal/search_api": "^1.31",
         "drupal/search_api_solr": "^4.3",
         "drupal/search_tracking": "^1.0",
+        "drupal/slick_views": "^3.0",
         "drupal/smart_date": "^4.0",
         "drupal/stringoverrides": "^1.8",
         "drupal/twig_tweak": "^3.3",
