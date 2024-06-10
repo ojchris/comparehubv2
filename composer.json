@@ -25,7 +25,6 @@
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
-        "drupal/devel": "^5.2",
         "drupal/eva": "^3.0",
         "drupal/facets": "^3.0@beta",
         "drupal/feeds": "^3.0@beta",
@@ -117,5 +116,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/devel": "^5.2"
     }
 }
