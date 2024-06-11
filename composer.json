@@ -42,6 +42,7 @@
         "drupal/smart_date": "^4.0",
         "drupal/stringoverrides": "^1.8",
         "drupal/twig_tweak": "^3.3",
+        "drupal/views_slideshow": "^5.0",
         "drush/drush": "^12.4"
     },
     "conflict": {
