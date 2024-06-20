@@ -212,7 +212,7 @@ function comparenone_preprocess_views_view(&$variables) {
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  *
- * Add views template suggestions.
+ * Add views grid template suggestions.
  * 
  * @inheritdoc
  */
@@ -224,7 +224,7 @@ function comparenone_theme_suggestions_views_view_grid_alter(array &$suggestions
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  *
- * Add views template suggestions.
+ * Add views list template suggestions.
  * 
  * @inheritdoc
  */
@@ -241,6 +241,17 @@ function comparenone_theme_suggestions_views_view_list_alter(array &$suggestions
  */
 function comparenone_theme_suggestions_views_view_unformatted_alter(array &$suggestions, array $variables) {
   $suggestions[] = 'views_view_unformatted__' . $variables['view']->id();
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ *
+ * Add views fields (enveloping several fields) template suggestions.
+ * 
+ * @inheritdoc
+ */
+function comparenone_theme_suggestions_views_view_fields_alter(array &$suggestions, array $variables) {
+  $suggestions[] = 'views_view_fields__' . $variables['view']->id();
 }
 
 /**
