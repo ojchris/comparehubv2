@@ -12,7 +12,20 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        }
+        },
+        {
+            "type": "package",
+            "package": {
+              "name": "woocommerce/flexslider",
+              "version": "2.7.2",
+              "type": "drupal-library",
+              "source": {
+                "url": "https://github.com/woocommerce/FlexSlider.git",
+                "type": "git",
+                "reference": "2.7.2"
+              }
+            }
+          }
     ],
     "require": {
         "composer/installers": "^2.0",
@@ -28,6 +41,7 @@
         "drupal/eva": "^3.0",
         "drupal/facets": "^3.0@beta",
         "drupal/feeds": "^3.0@beta",
+        "drupal/flexslider": "^3.0@alpha",
         "drupal/fullcalendar_view": "^5.1",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/paragraphs": "^1.17",
@@ -42,8 +56,8 @@
         "drupal/smart_date": "^4.0",
         "drupal/stringoverrides": "^1.8",
         "drupal/twig_tweak": "^3.3",
-        "drupal/views_slideshow": "^5.0",
-        "drush/drush": "^12.4"
+        "drush/drush": "^12.4",
+        "woocommerce/flexslider": "~2.0"
     },
     "conflict": {
         "drupal/drupal": "*"

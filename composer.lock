@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be94c67b74fcecaa1b086d2fc5db8b98",
+    "content-hash": "92ec7ee31cd36161606b8d45ce429e7c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2810,6 +2810,85 @@
             }
         },
         {
+            "name": "drupal/flexslider",
+            "version": "3.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/flexslider.git",
+                "reference": "3.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flexslider-3.0.0-alpha1.zip",
+                "reference": "3.0.0-alpha1",
+                "shasum": "6a2458db101bba5d1d4d4eb6c94fa2f1d88367bb"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "require-dev": {
+                "dropfort/dropfort_module_build": "^2.0@beta",
+                "drupal/flexslider_fields": "*",
+                "drupal/flexslider_views": "*"
+            },
+            "suggest": {
+                "woothemes/flexslider": "~2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-alpha1",
+                    "datestamp": "1694114706",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drupal-scaffold": {
+                    "gitignore": false,
+                    "allowed-packages": [
+                        "dropfort/dropfort_module_build"
+                    ],
+                    "locations": {
+                        "web-root": "drupal-ignore/"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "FlexSlider Module Contributors",
+                    "homepage": "https://www.drupal.org/node/1316346/committers",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "ClassicCut",
+                    "homepage": "https://www.drupal.org/user/2703101"
+                },
+                {
+                    "name": "minorOffense",
+                    "homepage": "https://www.drupal.org/user/129088"
+                },
+                {
+                    "name": "ryanwebpage",
+                    "homepage": "https://www.drupal.org/user/737596"
+                },
+                {
+                    "name": "spotzero",
+                    "homepage": "https://www.drupal.org/user/657848"
+                }
+            ],
+            "description": "FlexSlider 2 integration for Drupal",
+            "homepage": "https://www.drupal.org/project/flexslider",
+            "support": {
+                "source": "https://git.drupalcode.org/project/flexslider",
+                "issues": "https://drupal.org/project/issues/flexslider"
+            }
+        },
+        {
             "name": "drupal/fullcalendar_view",
             "version": "5.1.14",
             "source": {
@@ -4022,64 +4101,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
-            }
-        },
-        {
-            "name": "drupal/views_slideshow",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_slideshow.git",
-                "reference": "5.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_slideshow-5.0.0.zip",
-                "reference": "5.0.0",
-                "shasum": "9a8806f2390a054214ad593ee7b0242dca145440"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "5.0.0",
-                    "datestamp": "1673475707",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "NickDickinsonWilde",
-                    "homepage": "https://www.drupal.org/user/3094661"
-                },
-                {
-                    "name": "redndahead",
-                    "homepage": "https://www.drupal.org/user/160320"
-                },
-                {
-                    "name": "vbouchet",
-                    "homepage": "https://www.drupal.org/user/1671428"
-                }
-            ],
-            "description": "Describes relationships between entities.",
-            "homepage": "https://www.drupal.org/project/views_slideshow",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_slideshow",
-                "issues": "https://www.drupal.org/project/issues/views_slideshow"
             }
         },
         {
@@ -9181,6 +9202,16 @@
                 "source": "https://github.com/webflo/drupal-finder/tree/1.2.2"
             },
             "time": "2020-10-27T09:42:17+00:00"
+        },
+        {
+            "name": "woocommerce/flexslider",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/woocommerce/FlexSlider.git",
+                "reference": "2.7.2"
+            },
+            "type": "drupal-library"
         }
     ],
     "packages-dev": [
@@ -9530,6 +9561,7 @@
         "drupal/commerce_product_review": 15,
         "drupal/facets": 10,
         "drupal/feeds": 10,
+        "drupal/flexslider": 15,
         "drupal/inline_entity_form": 5,
         "drupal/recently_read": 20,
         "drupal/reviews": 10
