@@ -1,0 +1,88 @@
+uuid: 049e281d-9919-4285-a157-78f79cfb6b55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_banner
+    - field.field.node.event.field_date
+    - field.field.node.event.field_description
+    - node.type.event
+  module:
+    - blazy
+    - smart_date
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_banner:
+    type: blazy
+    label: above
+    settings:
+      caption: {  }
+      link: ''
+      by_delta: -1
+      layout: ''
+      view_mode: ''
+      cache: 0
+      admin_uri: ''
+      use_lb: false
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: lazy
+      preload: false
+      responsive_image_style: ''
+      use_theme_field: false
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_date:
+    type: smartdate_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      format: default
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      localize: false
+      parts:
+        - start
+        - end
+      duration:
+        separator: ' | '
+        unit: ''
+        decimals: 2
+        suffix: h
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

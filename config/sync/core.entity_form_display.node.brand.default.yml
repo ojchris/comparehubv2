@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.brand.field_address
     - field.field.node.brand.field_brand_name
     - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_event
     - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
@@ -23,15 +24,9 @@ targetEntityType: node
 bundle: brand
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_address:
     type: string_textarea
-    weight: 10
+    weight: 5
     region: content
     settings:
       rows: 5
@@ -39,7 +34,7 @@ content:
     third_party_settings: {  }
   field_brand_name:
     type: string_textfield
-    weight: 7
+    weight: 2
     region: content
     settings:
       size: 60
@@ -47,7 +42,17 @@ content:
     third_party_settings: {  }
   field_brand_type:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_event:
+    type: entity_reference_autocomplete
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -57,7 +62,7 @@ content:
     third_party_settings: {  }
   field_events:
     type: paragraphs
-    weight: 14
+    weight: 9
     region: content
     settings:
       title: Paragraph
@@ -75,7 +80,7 @@ content:
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -85,7 +90,7 @@ content:
     third_party_settings: {  }
   field_logo:
     type: image_image
-    weight: 9
+    weight: 4
     region: content
     settings:
       progress_indicator: throbber
@@ -93,7 +98,7 @@ content:
     third_party_settings: {  }
   field_phone_number:
     type: string_textfield
-    weight: 11
+    weight: 6
     region: content
     settings:
       size: 60
@@ -101,42 +106,21 @@ content:
     third_party_settings: {  }
   field_website:
     type: link_default
-    weight: 13
+    weight: 8
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 1
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 4
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 15
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 5
+    weight: 11
     region: content
     settings:
       display_label: true
@@ -149,14 +133,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 2
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

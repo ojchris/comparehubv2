@@ -1,0 +1,47 @@
+uuid: 877b224b-d190-4046-a4f7-0f91e2c7d20e
+langcode: en
+status: true
+dependencies: {  }
+id: flexslider_custom_carousel_with_min_and_max_ranges
+label: 'FlexSlider custom carousel with min and max ranges'
+options:
+  animation: slide
+  animationSpeed: 600
+  direction: horizontal
+  slideshow: true
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 7000
+  animationLoop: true
+  randomize: false
+  startAt: 0
+  itemWidth: 200
+  itemMargin: 10
+  minItems: 2
+  maxItems: 4
+  move: 0
+  directionNav: true
+  controlNav: '1'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: true
+  multipleKeyboard: false
+  mousewheel: false
+  touch: true
+  prevText: Previous
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: true
+  pauseOnHover: false
+  controlsContainer: .flex-control-nav-container
+  manualControls: ''

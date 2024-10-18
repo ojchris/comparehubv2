@@ -38,7 +38,7 @@ display:
           entity_type: null
           entity_field: title
           plugin_id: field
-          label: Product
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -102,7 +102,7 @@ display:
           entity_type: commerce_product_variation
           entity_field: price
           plugin_id: field
-          label: Amount
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -166,7 +166,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Brand
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -231,7 +231,7 @@ display:
           entity_type: recently_read
           entity_field: created
           plugin_id: field
-          label: Date
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -298,11 +298,64 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        view_commerce_product:
+          id: view_commerce_product
+          table: commerce_product
+          field: view_commerce_product
+          relationship: product_id
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_product
+          plugin_id: entity_link
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: true
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: 'View Details'
+            rel: ''
+            link_class: 'cart-context-action-link alt-table-action-link'
+            prefix: ''
+            suffix: ''
+            target: _blank
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 'View Details'
+          output_url_as_text: false
+          absolute: false
       pager:
         type: mini
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 1
           total_pages: null
           id: 0
           tags:
@@ -451,54 +504,18 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: table
+        type: default
         options:
           grouping: {  }
-          row_class: ''
+          row_class: app-table-alt-body-row
           default_row_class: false
-          columns:
-            title: title
-            price__number: price__number
-            field_product_brand: field_product_brand
-            created: created
-          default: '-1'
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            price__number:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_product_brand:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            created:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -530,7 +547,18 @@ display:
           entity_field: product_id
           plugin_id: standard
           required: true
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: "<div class=\"app-table-alt-heading\">\r\n                <div class=\"app-table-alt-heading-row\">\r\n                    <div class=\"app-table-alt-heading-column app-table-alt-column alt-table-col-one\">Product</div>\r\n                    <div class=\"app-table-alt-heading-column app-table-alt-column alt-table-col-two\">Amount</div>\r\n                    <div class=\"app-table-alt-heading-column app-table-alt-column alt-table-col-three\">Brand</div>\r\n                    <div class=\"app-table-alt-heading-column app-table-alt-column alt-table-col-four\">Date</div>\r\n                    <div class=\"app-table-alt-heading-column app-table-alt-column alt-table-col-five\"></div>\r\n                  </div>\r\n                </div>"
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:

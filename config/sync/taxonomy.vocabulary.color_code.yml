@@ -1,0 +1,8 @@
+uuid: 05019bf9-60fc-43a4-830e-3e1eed25246a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Color Code'
+vid: color_code
+description: 'Color code for events'
+weight: 0

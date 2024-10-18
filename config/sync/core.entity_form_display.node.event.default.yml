@@ -1,0 +1,70 @@
+uuid: e626ded4-53fb-4365-887a-9ac570434824
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.field_banner
+    - field.field.node.event.field_date
+    - field.field.node.event.field_description
+    - image.style.thumbnail
+    - node.type.event
+  module:
+    - image
+    - smart_date
+    - text
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  field_banner:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_date:
+    type: smartdate_inline
+    weight: 2
+    region: content
+    settings:
+      modal: false
+      default_duration: 60
+      default_duration_increments: |-
+        30
+        60|1 hour
+        90
+        120|2 hours
+        custom
+      show_extra: false
+      hide_date: true
+      allday: true
+      remove_seconds: false
+      separator: to
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

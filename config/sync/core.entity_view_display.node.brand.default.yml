@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.brand.field_address
     - field.field.node.brand.field_brand_name
     - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_event
     - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
@@ -44,6 +45,14 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_event:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_events:
     type: entity_reference_revisions_entity_view

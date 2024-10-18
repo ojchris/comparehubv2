@@ -1,0 +1,19 @@
+uuid: 8a048d5e-e14b-447a-ba98-c016fc97aeb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_title
+    - paragraphs.paragraphs_type.brand_event
+id: paragraph.brand_event.field_event_title
+field_name: field_event_title
+entity_type: paragraph
+bundle: brand_event
+label: 'Event Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

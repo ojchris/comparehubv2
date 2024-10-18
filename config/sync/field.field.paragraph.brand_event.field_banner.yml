@@ -1,0 +1,38 @@
+uuid: 0d388eff-4b64-4868-9706-5367ef5934cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner
+    - paragraphs.paragraphs_type.brand_event
+  module:
+    - image
+id: paragraph.brand_event.field_banner
+field_name: field_banner
+entity_type: paragraph
+bundle: brand_event
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: '1 MB'
+  max_resolution: ''
+  min_resolution: 380x200
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

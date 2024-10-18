@@ -1,0 +1,29 @@
+uuid: fe6e918f-76ea-4ec1-9107-57cb4ac50ae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_color_code
+    - paragraphs.paragraphs_type.brand_event
+    - taxonomy.vocabulary.color_code
+id: paragraph.brand_event.field_event_color_code
+field_name: field_event_color_code
+entity_type: paragraph
+bundle: brand_event
+label: 'Event Color Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      color_code: color_code
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

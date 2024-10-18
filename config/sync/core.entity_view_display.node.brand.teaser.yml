@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.brand.field_address
     - field.field.node.brand.field_brand_name
     - field.field.node.brand.field_brand_type
+    - field.field.node.brand.field_event
     - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
@@ -29,6 +30,7 @@ hidden:
   field_address: true
   field_brand_name: true
   field_brand_type: true
+  field_event: true
   field_events: true
   field_location: true
   field_logo: true

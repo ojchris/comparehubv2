@@ -1,0 +1,15 @@
+uuid: 7a74513d-d1a7-4815-a278-62c81de8ee74
+langcode: en
+status: true
+dependencies: {  }
+name: event_banner_380x200
+label: 'Event banner (380x200)'
+effects:
+  64e4323a-cc94-4b73-921e-7f655e72965f:
+    uuid: 64e4323a-cc94-4b73-921e-7f655e72965f
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 380
+      height: 200
+      anchor: center-center
