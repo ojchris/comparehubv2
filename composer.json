@@ -38,6 +38,7 @@
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
+        "drupal/entity_comparison": "^4.0",
         "drupal/eva": "^3.0",
         "drupal/facets": "^3.0@beta",
         "drupal/feeds": "^3.0@beta",
