@@ -30,3 +30,8 @@ cart-styles:
     theme:
       css/cart.css: {}
       css/compare-result.mobile.css: {}
+
+compare-list-styles:
+  css:
+    theme:
+      css/compare-list.css: {}
