@@ -291,3 +291,18 @@ function comparenone_theme_suggestions_table_alter(array &$suggestions, array $v
     return $suggestions;
 
 }
+
+
+/**
+ * Implements hook_theme_preprocess_entity_comparison_link
+ *
+function comparenone_preprocess_entity_comparison_link(array &$suggestions, array &$variables){
+  if (isset($variables['element']) && isset($variables['element']['#type']) && $variables['element']['#type'] == 'table') {
+        $original_theme_hook = $variables['theme_hook_original'];
+
+        $suggestions[] = $original_theme_hook . '__' . str_replace('-', '_', $variables['element']['#id']);
+    }
+
+    return $suggestions;
+}
+*/
