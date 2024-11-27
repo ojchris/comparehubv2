@@ -37,6 +37,7 @@ content:
     weight: 0
     region: content
 hidden:
+  add_to_cart_link: true
   attribute_additional_details: true
   langcode: true
   price: true
