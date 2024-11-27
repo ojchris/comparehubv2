@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c5be5bc4987d070105281a982c4ec0c",
+    "content-hash": "8433686c69b5e7b0a07080410f93f72f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2106,30 +2106,30 @@
         },
         {
             "name": "drupal/commerce_variation_cart_form",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_variation_cart_form.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_variation_cart_form-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "b1b3779e8e029b3f94d98ae813fcfc758d324aeb"
+                "url": "https://ftp.drupal.org/files/projects/commerce_variation_cart_form-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "dca73f5d3f3d6089666d2aee3342f0b683ed0dbd"
             },
             "require": {
                 "drupal/commerce": "^2.16 || ^3",
                 "drupal/commerce_cart": "*",
                 "drupal/commerce_order": "*",
                 "drupal/commerce_product": "*",
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1686892532",
+                    "version": "8.x-1.5",
+                    "datestamp": "1732177116",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2144,6 +2144,10 @@
                 {
                     "name": "johnpitcairn",
                     "homepage": "https://www.drupal.org/user/425866"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
                 }
             ],
             "description": "Provides a simple add-to-cart form in the product variation type manage display.",
