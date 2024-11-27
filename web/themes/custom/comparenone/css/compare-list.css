@@ -25,5 +25,11 @@
 
 #comparison-table .responsive-enabled tbody tr td:first-of-type{ 
     display: none;    
-}   
+} 
+
+#comparison-table .responsive-enabled tbody tr:nth-child(1) td{ 
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
     
