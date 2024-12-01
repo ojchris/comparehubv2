@@ -1,4 +1,8 @@
 
+.main-discover-content-section{
+  margin-top: 50px;
+}
+
 .dialog-opened {
   display: block !important;
 }
