@@ -1,0 +1,14 @@
+uuid: 9b5b7cab-01cf-4cc8-bafe-72ba04dc0d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.commerce_product_variation.default.default_product_list
+    - core.entity_view_mode.commerce_product_variation.default_product_list
+id: product_list
+label: 'Product List'
+add_link_text: 'Add to Compare List'
+remove_link_text: 'Remove from Compare List'
+limit: 0
+entity_type: commerce_product_variation
+bundle_type: default

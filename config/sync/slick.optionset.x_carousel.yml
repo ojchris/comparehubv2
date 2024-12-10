@@ -12,16 +12,20 @@ name: x_carousel
 weight: -8
 label: 'X Carousel'
 group: ''
-skin: boxed-carousel
+skin: classic
 breakpoints: 2
 optimized: true
 options:
+  options__active_tab: edit-options-settings
   settings:
+    adaptiveHeight: true
+    autoplay: true
+    arrows: false
     centerMode: true
     centerPadding: '0'
-    dots: true
     lazyLoad: ondemand
-    slidesToShow: 5
+    randomize: true
+    slidesToShow: 7
     slidesToScroll: 3
     swipeToSlide: true
     cssEase: 'cubic-bezier(0.950, 0.050, 0.795, 0.035)'
@@ -32,6 +36,7 @@ options:
         breakpoint: 900
         unslick: false
         settings:
+          adaptiveHeight: true
           centerMode: true
           centerPadding: 10px
           slidesToShow: 3

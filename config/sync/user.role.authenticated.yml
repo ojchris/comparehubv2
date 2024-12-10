@@ -10,6 +10,7 @@ dependencies:
     - commerce_order
     - commerce_product
     - contact
+    - entity_comparison
     - file
     - filter
     - media
@@ -34,6 +35,7 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use product_list entity comparison'
   - 'use text format basic_html'
   - 'view commerce_product'
   - 'view media'

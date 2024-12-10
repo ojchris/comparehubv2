@@ -1,0 +1,21 @@
+uuid: 9b703893-bab4-483a-9583-5c2531a31bb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_make_top
+    - node.type.brand
+id: node.brand.field_make_top
+field_name: field_make_top
+entity_type: node
+bundle: brand
+label: 'Top Brand?'
+description: 'Is this a top brand? '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

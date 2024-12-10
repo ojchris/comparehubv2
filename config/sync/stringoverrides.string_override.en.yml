@@ -4,10 +4,10 @@ contexts:
     translations:
       -
         source: '%title could not be added to your cart'
-        translation: '%title could not be added to your compare cart'
+        translation: '%title could not be added to your compare list'
       -
         source: '%title removed from your cart'
-        translation: '%title removed from your compare cart'
+        translation: '%title removed from your compare list'
       -
         source: '<a href=":url">your cart</a>'
         translation: '<a href=":url">your compare cart</a>'
@@ -15,26 +15,26 @@ contexts:
         source: 'Add to cart'
         translation: 'Add to compare'
       -
-        source: 'added to you cart.'
-        translation: 'added to you compare cart.'
+        source: 'added to your cart.'
+        translation: 'added to your compare list.'
       -
         source: 'Shopping cart'
-        translation: 'Compare Cart'
+        translation: 'Compare List'
       -
         source: 'Shopping cart contents'
-        translation: 'Compare cart contents'
+        translation: 'Compare list contents'
       -
         source: 'Update cart'
         translation: 'Update Cart'
       -
         source: 'View cart'
-        translation: 'View compare cart'
+        translation: 'View compare list'
       -
-        source: 'your cart'
-        translation: 'your compare cart'
+        source: 'your cart.'
+        translation: 'your compare list.'
       -
         source: 'Your shopping cart has been updated'
-        translation: 'Your compare cart has been updated'
+        translation: 'Your compare list has been updated'
       -
         source: 'Your shopping cart is empty.'
-        translation: 'Your compare cart is empty.'
+        translation: 'Your compare list is empty.'

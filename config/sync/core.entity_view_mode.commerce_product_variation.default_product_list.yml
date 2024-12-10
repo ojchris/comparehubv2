@@ -1,0 +1,11 @@
+uuid: 93eca0f9-18da-4351-af66-c948a0accd21
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.default_product_list
+label: 'Product List'
+description: ''
+targetEntityType: commerce_product_variation
+cache: true

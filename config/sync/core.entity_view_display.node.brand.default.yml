@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
+    - field.field.node.brand.field_make_top
     - field.field.node.brand.field_phone_number
     - field.field.node.brand.field_website
     - node.type.brand
@@ -81,6 +82,16 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_make_top:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_phone_number:
     type: string

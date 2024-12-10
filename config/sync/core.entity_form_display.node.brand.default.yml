@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
+    - field.field.node.brand.field_make_top
     - field.field.node.brand.field_phone_number
     - field.field.node.brand.field_website
     - image.style.thumbnail
@@ -26,7 +27,7 @@ mode: default
 content:
   field_address:
     type: string_textarea
-    weight: 5
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -52,7 +53,7 @@ content:
     third_party_settings: {  }
   field_event:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 11
     region: content
     settings:
       match_operator: CONTAINS
@@ -62,7 +63,7 @@ content:
     third_party_settings: {  }
   field_events:
     type: paragraphs
-    weight: 9
+    weight: 10
     region: content
     settings:
       title: Paragraph
@@ -80,7 +81,7 @@ content:
     third_party_settings: {  }
   field_location:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
@@ -90,15 +91,22 @@ content:
     third_party_settings: {  }
   field_logo:
     type: image_image
-    weight: 4
+    weight: 5
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_make_top:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_phone_number:
     type: string_textfield
-    weight: 6
+    weight: 7
     region: content
     settings:
       size: 60
@@ -106,7 +114,7 @@ content:
     third_party_settings: {  }
   field_website:
     type: link_default
-    weight: 8
+    weight: 9
     region: content
     settings:
       placeholder_url: ''
@@ -120,7 +128,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 11
+    weight: 12
     region: content
     settings:
       display_label: true

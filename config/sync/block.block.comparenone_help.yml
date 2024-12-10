@@ -11,7 +11,7 @@ _core:
 id: comparenone_help
 theme: comparenone
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: help_block
 settings:

@@ -4,4 +4,4 @@ status: true
 dependencies: {  }
 id: additional_details
 label: Attribute
-elementType: commerce_product_rendered_attribute
+elementType: radios

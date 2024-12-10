@@ -4,11 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_logo
-    - image.style.thumbnail
+    - image.style.discover_top_brand_thumbnail
+    - image.style.slick
     - node.type.brand
   module:
     - image
     - node
+    - slick
+    - slick_views
     - user
 id: brand_logos
 label: 'Brand Logos'
@@ -79,7 +82,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: thumbnail
+            image_style: discover_top_brand_thumbnail
             image_loading:
               attribute: lazy
           group_column: ''
@@ -167,29 +170,81 @@ display:
           plugin_id: bundle
           value:
             brand: brand
+        field_make_top_value:
+          id: field_make_top_value
+          table: node__field_make_top
+          field: field_make_top_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
-        type: table
+        type: slick
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          columns:
-            field_logo: field_logo
-          default: '-1'
-          info:
-            field_logo:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
+          caption:
+            field_logo: '0'
+          optionset: default
+          class: ''
+          image: ''
+          link: ''
+          overlay: ''
+          title: ''
+          vanilla: true
+          layout: ''
+          cache: 0
+          admin_uri: '/admin/structure/views/ajax/display/brand_logos/brands_logo_page/style_options?_wrapper_format=drupal_ajax'
+          grid: ''
+          grid_medium: ''
+          grid_small: ''
+          style: flexbox
+          skin: ''
+          overridables:
+            autoplay: autoplay
+            infinite: infinite
+            randomize: randomize
+            arrows: '0'
+            dots: '0'
+            draggable: '0'
+            mouseWheel: '0'
+            variableWidth: '0'
+          thumbnail: ''
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_effect: ''
+          thumbnail_position: ''
           override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
+          preserve_keys: false
+          visible_items: null
       row:
         type: fields
         options:
@@ -206,6 +261,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: top-brands-images
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -268,18 +324,18 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: top-brand-image-container
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: slick_image
           settings:
+            image_style: slick
             image_link: ''
-            image_style: thumbnail
             image_loading:
               attribute: lazy
           group_column: ''
@@ -314,15 +370,56 @@ display:
             offset_label: Offset
           quantity: 9
       style:
-        type: grid_responsive
+        type: slick
+        options:
+          caption:
+            field_logo: '0'
+          optionset: x_carousel
+          class: ''
+          image: ''
+          link: ''
+          overlay: ''
+          title: ''
+          vanilla: true
+          layout: ''
+          cache: 0
+          admin_uri: '/admin/structure/views/ajax/display/brand_logos/block_1/style_options?_wrapper_format=drupal_ajax'
+          grid: ''
+          grid_medium: ''
+          grid_small: ''
+          style: ''
+          skin: classic
+          overridables:
+            arrows: '0'
+            autoplay: '0'
+            dots: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          thumbnail: ''
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_effect: ''
+          thumbnail_position: ''
+          override: false
+          preserve_keys: false
+          visible_items: null
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       defaults:
         pager: false
         style: false
         row: false
         fields: false
       display_extenders: {  }
+      block_description: 'Top Brands Block'
     cache_metadata:
       max-age: -1
       contexts:

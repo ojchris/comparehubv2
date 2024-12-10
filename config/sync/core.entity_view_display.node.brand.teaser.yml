@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.brand.field_events
     - field.field.node.brand.field_location
     - field.field.node.brand.field_logo
+    - field.field.node.brand.field_make_top
     - field.field.node.brand.field_phone_number
     - field.field.node.brand.field_website
     - node.type.brand
@@ -34,6 +35,7 @@ hidden:
   field_events: true
   field_location: true
   field_logo: true
+  field_make_top: true
   field_phone_number: true
   field_website: true
   langcode: true
